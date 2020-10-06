@@ -15,6 +15,7 @@
 		9B8EF9AC252C631D00791F6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B8EF9AA252C631D00791F6E /* LaunchScreen.storyboard */; };
 		9B8EF9B7252C631D00791F6E /* macroCHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8EF9B6252C631D00791F6E /* macroCHTests.swift */; };
 		9B8EF9C2252C631D00791F6E /* macroCHUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8EF9C1252C631D00791F6E /* macroCHUITests.swift */; };
+		9B8EF9DB252C68C000791F6E /* designViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8EF9DA252C68C000791F6E /* designViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9B8EF9BD252C631D00791F6E /* macroCHUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macroCHUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B8EF9C1252C631D00791F6E /* macroCHUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macroCHUITests.swift; sourceTree = "<group>"; };
 		9B8EF9C3252C631D00791F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B8EF9DA252C68C000791F6E /* designViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = designViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				9B8EF99F252C631C00791F6E /* AppDelegate.swift */,
 				9B8EF9A1252C631C00791F6E /* SceneDelegate.swift */,
 				9B8EF9A3252C631C00791F6E /* ViewController.swift */,
+				9B8EF9DA252C68C000791F6E /* designViewController.swift */,
 				9B8EF9A5252C631C00791F6E /* Main.storyboard */,
 				9B8EF9A8252C631D00791F6E /* Assets.xcassets */,
 				9B8EF9AA252C631D00791F6E /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			files = (
 				9B8EF9A4252C631C00791F6E /* ViewController.swift in Sources */,
 				9B8EF9A0252C631C00791F6E /* AppDelegate.swift in Sources */,
+				9B8EF9DB252C68C000791F6E /* designViewController.swift in Sources */,
 				9B8EF9A2252C631C00791F6E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
