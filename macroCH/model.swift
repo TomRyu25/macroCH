@@ -44,3 +44,28 @@ struct condition {
     var hole: Bool
     var wearable: Bool
 }
+
+struct donationRecieve {
+    var name: String
+    var id: String
+    var location: Data
+    var desc: String
+    var phone: String
+    var needs: Data
+}
+
+struct location {
+    var country: String
+    var city: String
+    var province: String
+    var postalcode: String
+    var address: String
+    var subDistrict: String
+    var note: String
+}
+
+struct needs {
+    var item: Int
+    var desc: String
+    var purpose: String
+}
