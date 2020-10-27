@@ -11,7 +11,7 @@ struct User {
     var name: String
     var id: String
     var gender: Int
-    var baju: Data
+    var baju: Baju
     var size: Int
     var badan: Data
 }
@@ -68,4 +68,11 @@ struct Needs {
     var item: Int
     var desc: String
     var purpose: String
+}
+
+struct News {
+    var title: String
+    var detail: String
+    var content: String
+    var date: Date
 }
