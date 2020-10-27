@@ -31,6 +31,10 @@ class HomeScreenCollectionViewCell: UICollectionViewCell {
         //gradient call
         gradientView.layer.addSublayer(gradientLayer)
         gradientLayer.frame = gradientView.bounds
+        
+        //rounded corner
+        cellImageHomeScreenCollectionView.layer.cornerRadius = 20
+        gradientView.layer.cornerRadius = 20
     }
     
     
