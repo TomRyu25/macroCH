@@ -24,7 +24,7 @@ struct Baju {
     var condition: Data
 }
 
-struct ukuranBaju {
+struct UkuranBaju {
     var shoulder: Int
     var chest: Int
     var back: Int
@@ -32,7 +32,7 @@ struct ukuranBaju {
     var outstream: Int
 }
 
-struct ukuranBadan {
+struct UkuranBadan {
     var shoulder: Int
     var chest: Int
     var back: Int
@@ -45,7 +45,7 @@ struct Condition {
     var wearable: Bool
 }
 
-struct donationRecieve {
+struct DonationRecieve {
     var name: String
     var id: String
     var location: Data
@@ -54,7 +54,7 @@ struct donationRecieve {
     var needs: Data
 }
 
-struct location {
+struct Location {
     var country: String
     var city: String
     var province: String
@@ -64,7 +64,7 @@ struct location {
     var note: String
 }
 
-struct needs {
+struct Needs {
     var item: Int
     var desc: String
     var purpose: String
