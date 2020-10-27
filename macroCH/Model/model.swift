@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct user {
+struct User {
     var name: String
     var id: String
     var gender: Int
@@ -16,7 +16,7 @@ struct user {
     var badan: Data
 }
 
-struct baju {
+struct Baju {
     var name: String
     var id: Int
     var action: Int
@@ -40,7 +40,7 @@ struct ukuranBadan {
     var outstream: Int
 }
 
-struct condition {
+struct Condition {
     var hole: Bool
     var wearable: Bool
 }
