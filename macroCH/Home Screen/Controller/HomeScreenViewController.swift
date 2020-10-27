@@ -35,15 +35,18 @@ class HomeScreenViewController: UIViewController {
     let homeScreenCollectionViewCellId = "HomeScreenCollectionViewCell"
     
     
-    
+    var newsData: [News] = [
+        News(title: "asdf", details: "asdfasdf", content: "asdfasdfasdf", date: Date()),
+        News(title: "qwer", details: "qwerqwer", content: "qwerqwerqwer", date: Date()),
+        News(title: "zxcv", details: "zxcvzxcv", content: "zxcvzxcvzxcv", date: Date())
+    ]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        loadHomeScreen()
         // Do any additional setup after loading the view.
+
+        loadHomeScreen()
     }
     
     
@@ -92,5 +95,31 @@ class HomeScreenViewController: UIViewController {
 
 }
 
-extension HomeScreenViewController{
+extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return newsData.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        let inset: CGFloat = 10
+        let insetlr: CGFloat = 0
+        return UIEdgeInsets(top: inset, left: insetlr, bottom: inset, right: insetlr)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 354, height: 100)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: homeScreenCollectionViewCellId, for: indexPath) as! HomeScreenCollectionViewCell
+        let news = newsData[indexPath.row]
+        cell.cellNewsTitleLabelHomeScreenCollectionView.text = news.title
+        
+        return cell
+    }
 }

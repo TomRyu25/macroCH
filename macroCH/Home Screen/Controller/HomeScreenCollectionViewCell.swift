@@ -10,7 +10,7 @@ import UIKit
 class HomeScreenCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var cellImageHomeScreenCollectionView: UIImageView!
-    @IBOutlet weak var cellLabelHomeScreenCollectionView: UILabel!
+    @IBOutlet weak var cellNewsTitleLabelHomeScreenCollectionView: UILabel!
     @IBOutlet weak var gradientView: UIView!
     
     //gradient setup
