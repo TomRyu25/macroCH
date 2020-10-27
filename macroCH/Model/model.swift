@@ -13,15 +13,15 @@ struct User {
     var gender: Int
     var baju: Baju
     var size: Int
-    var badan: Data
+    var badan: UkuranBadan
 }
 
 struct Baju {
     var name: String
     var id: Int
     var action: Int
-    var measurement: Data
-    var condition: Data
+    var measurement: UkuranBaju
+    var condition: Condition
 }
 
 struct UkuranBaju {
@@ -48,10 +48,10 @@ struct Condition {
 struct DonationRecieve {
     var name: String
     var id: String
-    var location: Data
+    var location: Location
     var desc: String
     var phone: String
-    var needs: Data
+    var needs: Needs
 }
 
 struct Location {
@@ -72,7 +72,7 @@ struct Needs {
 
 struct News {
     var title: String
-    var detail: String
+    var details: String
     var content: String
     var date: Date
 }
