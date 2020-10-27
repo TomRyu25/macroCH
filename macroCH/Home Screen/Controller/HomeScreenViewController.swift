@@ -31,6 +31,10 @@ class HomeScreenViewController: UIViewController {
     @IBOutlet weak var itemSoldViewIconOutlet: UIView!
     
     @IBOutlet weak var donationPlaceViewOutlet: UIImageView!
+    @IBOutlet weak var donationNewsCollectionViewOutlet: UICollectionView!
+    let homeScreenCollectionViewCellId = "HomeScreenCollectionViewCell"
+    
+    
     
     
     
@@ -50,6 +54,11 @@ class HomeScreenViewController: UIViewController {
         
         //apply rounded corner
         roundedCornerHomeScreen()
+        
+        //register cell
+        let nibCell = UINib(nibName: homeScreenCollectionViewCellId, bundle: nil)
+        donationNewsCollectionViewOutlet.register(nibCell, forCellWithReuseIdentifier: homeScreenCollectionViewCellId)
+        
     }
     
     func roundedCornerHomeScreen() {
@@ -81,4 +90,7 @@ class HomeScreenViewController: UIViewController {
     }
     */
 
+}
+
+extension HomeScreenViewController{
 }

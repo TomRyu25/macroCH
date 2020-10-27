@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5A2EBBD1254731F4008F0ABC /* HomeScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2EBBD0254731F4008F0ABC /* HomeScreenStoryboard.storyboard */; };
 		5A2EBBE32547332A008F0ABC /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2EBBE22547332A008F0ABC /* HomeScreenViewController.swift */; };
+		5AC7FAF225480672003754BE /* HomeScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC7FAF025480672003754BE /* HomeScreenCollectionViewCell.swift */; };
+		5AC7FAF325480672003754BE /* HomeScreenCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AC7FAF125480672003754BE /* HomeScreenCollectionViewCell.xib */; };
 		9B1429282542D92100B25012 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1429272542D92100B25012 /* model.swift */; };
 		9B8EF9A0252C631C00791F6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8EF99F252C631C00791F6E /* AppDelegate.swift */; };
 		9B8EF9A2252C631C00791F6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8EF9A1252C631C00791F6E /* SceneDelegate.swift */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		5A2EBBD0254731F4008F0ABC /* HomeScreenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreenStoryboard.storyboard; sourceTree = "<group>"; };
 		5A2EBBE22547332A008F0ABC /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		5AC7FAF025480672003754BE /* HomeScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCollectionViewCell.swift; sourceTree = "<group>"; };
+		5AC7FAF125480672003754BE /* HomeScreenCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenCollectionViewCell.xib; sourceTree = "<group>"; };
 		9B1429272542D92100B25012 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		9B8EF99C252C631C00791F6E /* macroCH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macroCH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B8EF99F252C631C00791F6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,10 +91,28 @@
 		5A2EBBCF254731D9008F0ABC /* Home Screen */ = {
 			isa = PBXGroup;
 			children = (
-				5A2EBBD0254731F4008F0ABC /* HomeScreenStoryboard.storyboard */,
-				5A2EBBE22547332A008F0ABC /* HomeScreenViewController.swift */,
+				5AC7FAF725480688003754BE /* View */,
+				5AC7FAF92548069F003754BE /* Controller */,
 			);
 			path = "Home Screen";
+			sourceTree = "<group>";
+		};
+		5AC7FAF725480688003754BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5A2EBBD0254731F4008F0ABC /* HomeScreenStoryboard.storyboard */,
+				5AC7FAF125480672003754BE /* HomeScreenCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5AC7FAF92548069F003754BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5AC7FAF025480672003754BE /* HomeScreenCollectionViewCell.swift */,
+				5A2EBBE22547332A008F0ABC /* HomeScreenViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		9B1AFC692542E37200914394 /* Controller */ = {
@@ -275,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AC7FAF325480672003754BE /* HomeScreenCollectionViewCell.xib in Resources */,
 				5A2EBBD1254731F4008F0ABC /* HomeScreenStoryboard.storyboard in Resources */,
 				9B8EF9AC252C631D00791F6E /* LaunchScreen.storyboard in Resources */,
 				9B8EF9A9252C631D00791F6E /* Assets.xcassets in Resources */,
@@ -305,6 +328,7 @@
 			files = (
 				9B1429282542D92100B25012 /* model.swift in Sources */,
 				9B8EF9A4252C631C00791F6E /* ViewController.swift in Sources */,
+				5AC7FAF225480672003754BE /* HomeScreenCollectionViewCell.swift in Sources */,
 				9B8EF9A0252C631C00791F6E /* AppDelegate.swift in Sources */,
 				9B8EF9DB252C68C000791F6E /* designViewController.swift in Sources */,
 				9B8EF9A2252C631C00791F6E /* SceneDelegate.swift in Sources */,

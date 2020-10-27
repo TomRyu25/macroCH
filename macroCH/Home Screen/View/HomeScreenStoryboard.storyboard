@@ -249,6 +249,7 @@
                     </view>
                     <size key="freeformSize" width="414" height="1500"/>
                     <connections>
+                        <outlet property="donationNewsCollectionViewOutlet" destination="ETN-AC-lff" id="InN-s3-wMM"/>
                         <outlet property="donationPlaceViewOutlet" destination="JZV-de-UtP" id="rl9-NP-u6j"/>
                         <outlet property="itemDisposedViewIconOutlet" destination="pTF-fx-DKm" id="xZW-a1-VMS"/>
                         <outlet property="itemDisposedViewOutlet" destination="ZI1-An-rrk" id="YGG-zz-8KB"/>
