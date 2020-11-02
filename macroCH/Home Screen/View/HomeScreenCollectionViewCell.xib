@@ -17,14 +17,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="354" height="100"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="makeAChange" translatesAutoresizingMaskIntoConstraints="NO" id="PiR-4h-do3">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="makeAChange" translatesAutoresizingMaskIntoConstraints="NO" id="PiR-4h-do3">
                         <rect key="frame" x="0.0" y="0.0" width="354" height="100"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="PiR-4h-do3" secondAttribute="height" multiplier="177:50" id="CCo-tS-H5R"/>
-                        </constraints>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGX-JE-BNC">
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GGX-JE-BNC">
                         <rect key="frame" x="0.0" y="0.0" width="354" height="100"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GBh-GM-wW5">
                                 <rect key="frame" x="20" y="65" width="314" height="18"/>
@@ -35,23 +34,10 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="separatorColor"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="GGX-JE-BNC" secondAttribute="height" multiplier="177:50" id="et1-W1-Lr9"/>
-                        </constraints>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <constraints>
-                <constraint firstItem="PiR-4h-do3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3cm-Qe-gPb"/>
-                <constraint firstAttribute="trailing" secondItem="PiR-4h-do3" secondAttribute="trailing" id="4pK-r5-fAZ"/>
-                <constraint firstItem="PiR-4h-do3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5ar-op-gb0"/>
-                <constraint firstItem="GGX-JE-BNC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Gcd-AY-yzS"/>
-                <constraint firstItem="GGX-JE-BNC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="T59-Cz-DDc"/>
-                <constraint firstAttribute="bottom" secondItem="PiR-4h-do3" secondAttribute="bottom" id="VKQ-eQ-wlR"/>
-                <constraint firstAttribute="trailing" secondItem="GGX-JE-BNC" secondAttribute="trailing" id="YK1-A3-MDF"/>
-                <constraint firstAttribute="bottom" secondItem="GGX-JE-BNC" secondAttribute="bottom" id="YzH-Om-Zle"/>
-            </constraints>
             <size key="customSize" width="291" height="92"/>
             <connections>
                 <outlet property="cellImageHomeScreenCollectionView" destination="PiR-4h-do3" id="mFo-hr-493"/>

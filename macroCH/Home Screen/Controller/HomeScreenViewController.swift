@@ -31,8 +31,22 @@ class HomeScreenViewController: UIViewController {
     @IBOutlet weak var itemSoldViewIconOutlet: UIView!
     
     @IBOutlet weak var donationPlaceViewOutlet: UIImageView!
-    @IBOutlet weak var donationNewsCollectionViewOutlet: UICollectionView!
-    let homeScreenCollectionViewCellId = "HomeScreenCollectionViewCell"
+    
+    @IBOutlet weak var newsTitle1ViewOutlet: UIView!
+    @IBOutlet weak var newsTitle1LabelOutlet: UILabel!
+    @IBOutlet weak var newsTitle1ImageOutlet: UIImageView!
+    
+    @IBOutlet weak var newsTitle2ViewOutlet: UIView!
+    @IBOutlet weak var newsTitle2LabelOutlet: UILabel!
+    @IBOutlet weak var newsTitle2ImageOutlet: UIImageView!
+    
+    @IBOutlet weak var newsTitle3ViewOutlet: UIView!
+    @IBOutlet weak var newsTitle3LabelOutlet: UILabel!
+    @IBOutlet weak var newsTitle3ImageOutlet: UIImageView!
+    
+    
+//    @IBOutlet weak var donationNewsCollectionViewOutlet: UICollectionView!
+//    let homeScreenCollectionViewCellId = "HomeScreenCollectionViewCell"
     
     
     var newsData: [News] = [
@@ -40,6 +54,19 @@ class HomeScreenViewController: UIViewController {
         News(title: "qwer", details: "qwerqwer", content: "qwerqwerqwer", date: Date()),
         News(title: "zxcv", details: "zxcvzxcv", content: "zxcvzxcvzxcv", date: Date())
     ]
+    
+    
+    //gradient setup
+    var gradientLayer: CAGradientLayer = {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [UIColor.white.cgColor, UIColor.black.cgColor]
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 1)
+        gradientLayer.frame = CGRect.zero
+        
+        return gradientLayer
+    }()
+    
     
     
     override func viewDidLoad() {
@@ -51,16 +78,25 @@ class HomeScreenViewController: UIViewController {
     
     
     func loadHomeScreen() {
+//        //set up collection view
+//        donationNewsCollectionViewOutlet.delegate = self
+//        donationNewsCollectionViewOutlet.dataSource = self
+        
         //implement user data
         userNameLabelOutlet.text = userName
         userProfileImageOutlet.image = userProfileImage
         
+        //implement news data
+        newsTitle1LabelOutlet.text = newsData[0].title
+        newsTitle2LabelOutlet.text = newsData[1].title
+        newsTitle3LabelOutlet.text = newsData[2].title
+        
         //apply rounded corner
         roundedCornerHomeScreen()
         
-        //register cell
-        let nibCell = UINib(nibName: homeScreenCollectionViewCellId, bundle: nil)
-        donationNewsCollectionViewOutlet.register(nibCell, forCellWithReuseIdentifier: homeScreenCollectionViewCellId)
+//        //register cell
+//        let nibCell = UINib(nibName: homeScreenCollectionViewCellId, bundle: nil)
+//        donationNewsCollectionViewOutlet.register(nibCell, forCellWithReuseIdentifier: homeScreenCollectionViewCellId)
         
     }
     
@@ -81,6 +117,17 @@ class HomeScreenViewController: UIViewController {
         
         itemSoldViewOutlet.layer.cornerRadius = 20
         itemSoldViewIconOutlet.layer.cornerRadius = 20
+        
+        donationPlaceViewOutlet.layer.cornerRadius = 20
+        
+        newsTitle1ViewOutlet.layer.cornerRadius = 20
+        newsTitle1ImageOutlet.layer.cornerRadius = 20
+        
+        newsTitle2ViewOutlet.layer.cornerRadius = 20
+        newsTitle2ImageOutlet.layer.cornerRadius = 20
+        
+        newsTitle3ViewOutlet.layer.cornerRadius = 20
+        newsTitle3ImageOutlet.layer.cornerRadius = 20
     }
     
     /*
@@ -95,31 +142,40 @@ class HomeScreenViewController: UIViewController {
 
 }
 
-extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return newsData.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let inset: CGFloat = 10
-        let insetlr: CGFloat = 0
-        return UIEdgeInsets(top: inset, left: insetlr, bottom: inset, right: insetlr)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 354, height: 100)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: homeScreenCollectionViewCellId, for: indexPath) as! HomeScreenCollectionViewCell
-        let news = newsData[indexPath.row]
-        cell.cellNewsTitleLabelHomeScreenCollectionView.text = news.title
-        
-        return cell
-    }
-}
+//extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+//
+//    func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        return 1
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return newsData.count
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//        let inset: CGFloat = 10
+//        let insetlr: CGFloat = 0
+//        return UIEdgeInsets(top: inset, left: insetlr, bottom: inset, right: insetlr)
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: 354, height: 100)
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: homeScreenCollectionViewCellId, for: indexPath) as! HomeScreenCollectionViewCell
+//        let news = newsData[indexPath.row]
+//        cell.cellNewsTitleLabelHomeScreenCollectionView.text = news.title
+//
+//
+//        //gradient call
+//        cell.gradientView.layer.addSublayer(gradientLayer)
+//        gradientLayer.frame = cell.gradientView.bounds
+//
+//        //rounded corner
+//        cell.cellImageHomeScreenCollectionView.layer.cornerRadius = 20
+//        cell.gradientView.layer.cornerRadius = 20
+//
+//        return cell
+//    }
+//}
