@@ -30,7 +30,8 @@ class HomeScreenViewController: UIViewController {
     @IBOutlet weak var itemSoldViewOutlet: UIView!
     @IBOutlet weak var itemSoldViewIconOutlet: UIView!
     
-    @IBOutlet weak var donationPlaceViewOutlet: UIImageView!
+    @IBOutlet weak var donationPlaceViewOutlet: UIView!
+    @IBOutlet weak var donationPlaceImageViewOutlet: UIImageView!
     
     @IBOutlet weak var newsTitle1ViewOutlet: UIView!
     @IBOutlet weak var newsTitle1LabelOutlet: UILabel!
@@ -50,9 +51,9 @@ class HomeScreenViewController: UIViewController {
     
     
     var newsData: [News] = [
-        News(title: "asdf", details: "asdfasdf", content: "asdfasdfasdf", date: Date()),
-        News(title: "qwer", details: "qwerqwer", content: "qwerqwerqwer", date: Date()),
-        News(title: "zxcv", details: "zxcvzxcv", content: "zxcvzxcvzxcv", date: Date())
+        News(title: "News Title 1", details: "asdfasdf", content: "asdfasdfasdf", date: Date()),
+        News(title: "News Title 2", details: "qwerqwer", content: "qwerqwerqwer", date: Date()),
+        News(title: "News Title 3", details: "zxcvzxcv", content: "zxcvzxcvzxcv", date: Date())
     ]
     
     

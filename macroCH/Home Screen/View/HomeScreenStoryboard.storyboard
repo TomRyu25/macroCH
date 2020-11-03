@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VO-Zx-6Cv">
-                                        <rect key="frame" x="30" y="80" width="98" height="49"/>
+                                        <rect key="frame" x="30" y="81" width="98" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                         <nil key="textColor"/>
@@ -164,7 +164,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="200"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hae-Mf-9tn">
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hae-Mf-9tn">
                                                 <rect key="frame" x="0.0" y="149" width="354" height="51"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
@@ -281,7 +281,8 @@
                     </view>
                     <size key="freeformSize" width="414" height="1400"/>
                     <connections>
-                        <outlet property="donationPlaceViewOutlet" destination="JZV-de-UtP" id="rl9-NP-u6j"/>
+                        <outlet property="donationPlaceImageViewOutlet" destination="JZV-de-UtP" id="rl9-NP-u6j"/>
+                        <outlet property="donationPlaceViewOutlet" destination="qJT-Dj-BXB" id="4ar-N1-XcD"/>
                         <outlet property="itemDisposedViewIconOutlet" destination="pTF-fx-DKm" id="xZW-a1-VMS"/>
                         <outlet property="itemDisposedViewOutlet" destination="ZI1-An-rrk" id="YGG-zz-8KB"/>
                         <outlet property="itemDonatedViewIconOutlet" destination="CVy-HU-ZmF" id="UBT-YD-tTj"/>
@@ -292,7 +293,7 @@
                         <outlet property="itemSoldViewOutlet" destination="nxV-9A-9Y0" id="C82-zm-AAo"/>
                         <outlet property="newsTitle1ImageOutlet" destination="uJE-LX-jaO" id="keE-BW-I6k"/>
                         <outlet property="newsTitle1LabelOutlet" destination="7FC-TE-WJK" id="oFg-M3-g6e"/>
-                        <outlet property="newsTitle1ViewOutlet" destination="uJE-LX-jaO" id="SBq-dW-whG"/>
+                        <outlet property="newsTitle1ViewOutlet" destination="t7P-Vl-36h" id="3Zo-TH-khk"/>
                         <outlet property="newsTitle2ImageOutlet" destination="t3J-nL-p2L" id="lgT-cG-aam"/>
                         <outlet property="newsTitle2LabelOutlet" destination="1oO-2t-47h" id="IAp-3P-erY"/>
                         <outlet property="newsTitle2ViewOutlet" destination="GKi-xM-Jor" id="dfY-eN-cBO"/>
