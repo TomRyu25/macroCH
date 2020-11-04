@@ -51,7 +51,7 @@ class ItemKeptViewController: UIViewController {
     func itemKeptNavBarSetUp() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "System", size: 21)!]
+//        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "System", size: 21)!]
         self.navigationController?.title = "Kept"
     }
     
@@ -86,14 +86,6 @@ extension ItemKeptViewController: UICollectionViewDelegate, UICollectionViewData
         return UICollectionReusableView()
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        
-        let size = CGSize(width: 354, height: 50)
-        
-        
-        return size
-    }
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return itemKept.count
     }
@@ -104,10 +96,18 @@ extension ItemKeptViewController: UICollectionViewDelegate, UICollectionViewData
         let selectedItem = itemKept[indexPath.section]
         
         cell.name.text = selectedItem.name
-        cell.image.image = UIImage(named: "makeAChange")
+        cell.image.image = UIImage(named: "exampleImage")
+        
+        
         
         cell.layer.cornerRadius = 20.0
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(identifier: "ItemKeptDetailViewController") as? ItemKeptDetailViewController
+        vc?.itemContainer = itemKept[indexPath.section]
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
 }
