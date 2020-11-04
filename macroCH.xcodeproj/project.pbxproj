@@ -145,6 +145,7 @@
 				9B8EF9A5252C631C00791F6E /* Main.storyboard */,
 			);
 			name = View;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		9B1AFC6B2542E37C00914394 /* Model */ = {
@@ -201,6 +202,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9B25A06D2553222A0079616A /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				9B1AFC6B2542E37C00914394 /* Model */,
+				9B1AFC6A2542E37700914394 /* View */,
+				9B1AFC692542E37200914394 /* Controller */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
 		9B8EF993252C631C00791F6E = {
 			isa = PBXGroup;
 			children = (
@@ -227,9 +238,7 @@
 				9B25A054255321890079616A /* Onboarding */,
 				9B25A05A255321890079616A /* Tutorial */,
 				5A2EBBCF254731D9008F0ABC /* Home Screen */,
-				9B1AFC6B2542E37C00914394 /* Model */,
-				9B1AFC6A2542E37700914394 /* View */,
-				9B1AFC692542E37200914394 /* Controller */,
+				9B25A06D2553222A0079616A /* MVC */,
 				9B8EF99F252C631C00791F6E /* AppDelegate.swift */,
 				9B8EF9A1252C631C00791F6E /* SceneDelegate.swift */,
 				9B8EF9DA252C68C000791F6E /* designViewController.swift */,
