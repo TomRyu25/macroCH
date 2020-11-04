@@ -10,6 +10,12 @@
 		1D05C3C52550B4F2002A8835 /* Onboarding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C3C42550B4F2002A8835 /* Onboarding.xib */; };
 		1D05C3CA2550B506002A8835 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D05C3C92550B506002A8835 /* Onboarding.swift */; };
 		1D05C3CF2550B51A002A8835 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D05C3CE2550B51A002A8835 /* OnboardingViewController.swift */; };
+		1D05C41325515A6B002A8835 /* OnboardingHomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C41225515A6B002A8835 /* OnboardingHomeView.xib */; };
+		1D05C41B2552087C002A8835 /* ScanOnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C41A2552087C002A8835 /* ScanOnboardingView.xib */; };
+		1D05C420255208FB002A8835 /* CameraOnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C41F255208FB002A8835 /* CameraOnboardingView.xib */; };
+		1D05C42525520918002A8835 /* RecommendOnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C42425520918002A8835 /* RecommendOnboardingView.xib */; };
+		1D05C42A25520932002A8835 /* ActionOnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C42925520932002A8835 /* ActionOnboardingView.xib */; };
+		1D05C42F2552094A002A8835 /* ConfirmationOnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C42E2552094A002A8835 /* ConfirmationOnboardingView.xib */; };
 		9B1429282542D92100B25012 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1429272542D92100B25012 /* model.swift */; };
 		9B8EF9A0252C631C00791F6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8EF99F252C631C00791F6E /* AppDelegate.swift */; };
 		9B8EF9A2252C631C00791F6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8EF9A1252C631C00791F6E /* SceneDelegate.swift */; };
@@ -43,6 +49,12 @@
 		1D05C3C42550B4F2002A8835 /* Onboarding.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Onboarding.xib; sourceTree = "<group>"; };
 		1D05C3C92550B506002A8835 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		1D05C3CE2550B51A002A8835 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		1D05C41225515A6B002A8835 /* OnboardingHomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingHomeView.xib; sourceTree = "<group>"; };
+		1D05C41A2552087C002A8835 /* ScanOnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanOnboardingView.xib; sourceTree = "<group>"; };
+		1D05C41F255208FB002A8835 /* CameraOnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraOnboardingView.xib; sourceTree = "<group>"; };
+		1D05C42425520918002A8835 /* RecommendOnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendOnboardingView.xib; sourceTree = "<group>"; };
+		1D05C42925520932002A8835 /* ActionOnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionOnboardingView.xib; sourceTree = "<group>"; };
+		1D05C42E2552094A002A8835 /* ConfirmationOnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmationOnboardingView.xib; sourceTree = "<group>"; };
 		9B1429272542D92100B25012 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		9B8EF99C252C631C00791F6E /* macroCH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macroCH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B8EF99F252C631C00791F6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +124,27 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		1D05C41725520698002A8835 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				1D05C41925520735002A8835 /* View */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		1D05C41925520735002A8835 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D05C41225515A6B002A8835 /* OnboardingHomeView.xib */,
+				1D05C41A2552087C002A8835 /* ScanOnboardingView.xib */,
+				1D05C41F255208FB002A8835 /* CameraOnboardingView.xib */,
+				1D05C42425520918002A8835 /* RecommendOnboardingView.xib */,
+				1D05C42925520932002A8835 /* ActionOnboardingView.xib */,
+				1D05C42E2552094A002A8835 /* ConfirmationOnboardingView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9B1AFC692542E37200914394 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +192,7 @@
 		9B8EF99E252C631C00791F6E /* macroCH */ = {
 			isa = PBXGroup;
 			children = (
+				1D05C41725520698002A8835 /* Tutorial */,
 				1D05C3BC2550B438002A8835 /* Onboarding */,
 				9B1AFC6B2542E37C00914394 /* Model */,
 				9B1AFC6A2542E37700914394 /* View */,
@@ -294,9 +328,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D05C41B2552087C002A8835 /* ScanOnboardingView.xib in Resources */,
 				9B8EF9AC252C631D00791F6E /* LaunchScreen.storyboard in Resources */,
+				1D05C42A25520932002A8835 /* ActionOnboardingView.xib in Resources */,
 				9B8EF9A9252C631D00791F6E /* Assets.xcassets in Resources */,
+				1D05C420255208FB002A8835 /* CameraOnboardingView.xib in Resources */,
+				1D05C42525520918002A8835 /* RecommendOnboardingView.xib in Resources */,
+				1D05C41325515A6B002A8835 /* OnboardingHomeView.xib in Resources */,
 				1D05C3C52550B4F2002A8835 /* Onboarding.xib in Resources */,
+				1D05C42F2552094A002A8835 /* ConfirmationOnboardingView.xib in Resources */,
 				9B8EF9A7252C631C00791F6E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
