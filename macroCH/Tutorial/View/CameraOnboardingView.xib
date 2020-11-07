@@ -14,22 +14,27 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CAp-ZA-YmT">
-                    <rect key="frame" x="0.0" y="-12" width="414" height="896"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CAp-ZA-YmT">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bSq-Aw-2Lr">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSq-Aw-2Lr">
                             <rect key="frame" x="39" y="187" width="337" height="294"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BSw-18-r5I">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BSw-18-r5I">
                                     <rect key="frame" x="12" y="8" width="312" height="278"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="100" id="rp6-c8-Blm"/>
-                                        <constraint firstAttribute="width" constant="100" id="wPc-6s-eI9"/>
+                                        <constraint firstAttribute="width" constant="312" id="Hfp-Lf-Psm"/>
+                                        <constraint firstAttribute="height" constant="278" id="dkb-OG-cOQ"/>
                                     </constraints>
                                 </imageView>
                             </subviews>
-                            <color key="backgroundColor" red="0.72215467690000001" green="0.89851063490000005" blue="0.86666709180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="BSw-18-r5I" secondAttribute="trailing" constant="13" id="CrN-7P-Vkm"/>
+                                <constraint firstItem="BSw-18-r5I" firstAttribute="top" secondItem="bSq-Aw-2Lr" secondAttribute="top" constant="8" id="Otp-mt-pcD"/>
+                                <constraint firstAttribute="bottom" secondItem="BSw-18-r5I" secondAttribute="bottom" constant="8" id="YtE-kM-OT5"/>
+                                <constraint firstItem="BSw-18-r5I" firstAttribute="leading" secondItem="bSq-Aw-2Lr" secondAttribute="leading" constant="12" id="eAA-WY-JJS"/>
+                            </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Point the camera towards your clothes to scan properly" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgK-x9-efw">
                             <rect key="frame" x="53" y="557" width="308" height="99"/>
@@ -44,16 +49,28 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="bSq-Aw-2Lr" secondAttribute="trailing" constant="38" id="CSc-mx-V57"/>
                         <constraint firstAttribute="width" constant="414" id="H7g-7V-D2z"/>
+                        <constraint firstItem="bSq-Aw-2Lr" firstAttribute="top" secondItem="CAp-ZA-YmT" secondAttribute="top" constant="187" id="VgR-O0-jvp"/>
                         <constraint firstAttribute="trailing" secondItem="xgK-x9-efw" secondAttribute="trailing" constant="53" id="feh-VD-re2"/>
+                        <constraint firstItem="bSq-Aw-2Lr" firstAttribute="leading" secondItem="CAp-ZA-YmT" secondAttribute="leading" constant="39" id="lD8-3u-Vuz"/>
                         <constraint firstAttribute="height" constant="896" id="meR-Mg-Bpm"/>
                         <constraint firstAttribute="bottom" secondItem="xgK-x9-efw" secondAttribute="bottom" constant="240" id="mlM-Wz-ZfW"/>
                         <constraint firstItem="xgK-x9-efw" firstAttribute="leading" secondItem="CAp-ZA-YmT" secondAttribute="leading" constant="53" id="po6-wD-nZE"/>
+                        <constraint firstItem="xgK-x9-efw" firstAttribute="top" secondItem="bSq-Aw-2Lr" secondAttribute="bottom" constant="76" id="wzd-Bs-ZdK"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="CAp-ZA-YmT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="03w-ru-Sqt"/>
+                <constraint firstItem="CAp-ZA-YmT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1l1-Fp-VEQ"/>
+                <constraint firstItem="CAp-ZA-YmT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Fsi-Vx-ah1"/>
+                <constraint firstItem="CAp-ZA-YmT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VIW-Vy-b1y"/>
+                <constraint firstItem="CAp-ZA-YmT" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="k1G-y5-rlj"/>
+                <constraint firstAttribute="bottom" secondItem="CAp-ZA-YmT" secondAttribute="bottom" id="kUg-vm-ZJk"/>
+            </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
         </view>
     </objects>
