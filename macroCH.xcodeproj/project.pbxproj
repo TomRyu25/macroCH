@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D05C43A2552BE93002A8835 /* DisposedDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C4392552BE93002A8835 /* DisposedDetailView.xib */; };
+		1D05C443255343D7002A8835 /* Disposed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C442255343D7002A8835 /* Disposed.storyboard */; };
+		1D05C448255343EF002A8835 /* DisposedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D05C447255343EF002A8835 /* DisposedViewController.swift */; };
+		1D05C45025534401002A8835 /* DisposedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D05C44F25534401002A8835 /* DisposedView.swift */; };
+		1D05C4582553E270002A8835 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C4572553E270002A8835 /* ItemCollectionViewCell.xib */; };
+		1D05C45D2553E40D002A8835 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D05C45C2553E40D002A8835 /* ItemCollectionViewCell.swift */; };
+		1D05C465255402AF002A8835 /* DisposedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D05C464255402AF002A8835 /* DisposedDetailViewController.swift */; };
+		1D05C4A52558AB54002A8835 /* DisposedCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D05C4A42558AB54002A8835 /* DisposedCollectionReusableView.swift */; };
 		9B1429282542D92100B25012 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1429272542D92100B25012 /* model.swift */; };
 		9B8EF9A0252C631C00791F6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8EF99F252C631C00791F6E /* AppDelegate.swift */; };
 		9B8EF9A2252C631C00791F6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8EF9A1252C631C00791F6E /* SceneDelegate.swift */; };
@@ -37,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D05C4392552BE93002A8835 /* DisposedDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisposedDetailView.xib; sourceTree = "<group>"; };
+		1D05C442255343D7002A8835 /* Disposed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Disposed.storyboard; sourceTree = "<group>"; };
+		1D05C447255343EF002A8835 /* DisposedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposedViewController.swift; sourceTree = "<group>"; };
+		1D05C44F25534401002A8835 /* DisposedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposedView.swift; sourceTree = "<group>"; };
+		1D05C4572553E270002A8835 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		1D05C45C2553E40D002A8835 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		1D05C464255402AF002A8835 /* DisposedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposedDetailViewController.swift; sourceTree = "<group>"; };
+		1D05C4A42558AB54002A8835 /* DisposedCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposedCollectionReusableView.swift; sourceTree = "<group>"; };
 		9B1429272542D92100B25012 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		9B8EF99C252C631C00791F6E /* macroCH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macroCH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B8EF99F252C631C00791F6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +96,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D05C4362552B6F1002A8835 /* Disposed */ = {
+			isa = PBXGroup;
+			children = (
+				1D05C4382552B6FF002A8835 /* Controller */,
+				1D05C4372552B6FA002A8835 /* View */,
+			);
+			path = Disposed;
+			sourceTree = "<group>";
+		};
+		1D05C4372552B6FA002A8835 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D05C442255343D7002A8835 /* Disposed.storyboard */,
+				1D05C4392552BE93002A8835 /* DisposedDetailView.xib */,
+				1D05C44F25534401002A8835 /* DisposedView.swift */,
+				1D05C4572553E270002A8835 /* ItemCollectionViewCell.xib */,
+				1D05C45C2553E40D002A8835 /* ItemCollectionViewCell.swift */,
+				1D05C4A42558AB54002A8835 /* DisposedCollectionReusableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1D05C4382552B6FF002A8835 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1D05C447255343EF002A8835 /* DisposedViewController.swift */,
+				1D05C464255402AF002A8835 /* DisposedDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		9B1AFC692542E37200914394 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +174,7 @@
 		9B8EF99E252C631C00791F6E /* macroCH */ = {
 			isa = PBXGroup;
 			children = (
+				1D05C4362552B6F1002A8835 /* Disposed */,
 				9B1AFC6B2542E37C00914394 /* Model */,
 				9B1AFC6A2542E37700914394 /* View */,
 				9B1AFC692542E37200914394 /* Controller */,
@@ -262,8 +310,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B8EF9AC252C631D00791F6E /* LaunchScreen.storyboard in Resources */,
+				1D05C443255343D7002A8835 /* Disposed.storyboard in Resources */,
 				9B8EF9A9252C631D00791F6E /* Assets.xcassets in Resources */,
+				1D05C4582553E270002A8835 /* ItemCollectionViewCell.xib in Resources */,
 				9B8EF9A7252C631C00791F6E /* Main.storyboard in Resources */,
+				1D05C43A2552BE93002A8835 /* DisposedDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,8 +340,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B1429282542D92100B25012 /* model.swift in Sources */,
+				1D05C465255402AF002A8835 /* DisposedDetailViewController.swift in Sources */,
+				1D05C4A52558AB54002A8835 /* DisposedCollectionReusableView.swift in Sources */,
+				1D05C45025534401002A8835 /* DisposedView.swift in Sources */,
 				9B8EF9A4252C631C00791F6E /* ViewController.swift in Sources */,
 				9B8EF9A0252C631C00791F6E /* AppDelegate.swift in Sources */,
+				1D05C448255343EF002A8835 /* DisposedViewController.swift in Sources */,
+				1D05C45D2553E40D002A8835 /* ItemCollectionViewCell.swift in Sources */,
 				9B8EF9DB252C68C000791F6E /* designViewController.swift in Sources */,
 				9B8EF9A2252C631C00791F6E /* SceneDelegate.swift in Sources */,
 			);
