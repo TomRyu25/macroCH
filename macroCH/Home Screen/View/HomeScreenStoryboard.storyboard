@@ -72,6 +72,9 @@
                                                 <state key="normal" title="Scan">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="3g1-Ms-JVF" kind="show" id="3VT-XM-TaD"/>
+                                                </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uC1-93-b14">
                                                 <rect key="frame" x="240" y="17.5" width="102" height="106.5"/>
@@ -325,6 +328,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Das-NI-HUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-291.304347826087" y="76.339285714285708"/>
+        </scene>
+        <!--scan1-->
+        <scene sceneID="VMp-X0-yV0">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="scan1" storyboardName="scan1Storyboard" referencedIdentifier="scan1" id="3g1-Ms-JVF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qwU-Zs-HQS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSq-5t-rzU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="-45"/>
         </scene>
     </scenes>
     <resources>
