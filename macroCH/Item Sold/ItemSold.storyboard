@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sold-->
+        <!--Sell-->
         <scene sceneID="AFU-QB-Uxz">
             <objects>
-                <viewController storyboardIdentifier="ItemSoldDetailViewController" title="Sold" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sD9-TR-Oy2" customClass="ItemSoldDetailViewController" customModule="macroCH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemSoldDetailViewController" title="Sell" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sD9-TR-Oy2" customClass="ItemSoldDetailViewController" customModule="macroCH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nwi-RF-teR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,8 +57,8 @@
                                 <rect key="frame" x="169" y="483" width="133" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yellow Shirt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPN-Sp-FNY">
-                                        <rect key="frame" x="22" y="4" width="89" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yellow Shirt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPN-Sp-FNY">
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -76,8 +76,8 @@
                                 <rect key="frame" x="169" y="531" width="135" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJv-lb-tTh">
-                                        <rect key="frame" x="22" y="4" width="105" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJv-lb-tTh">
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -95,8 +95,8 @@
                                 <rect key="frame" x="169" y="579" width="166" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Good Condition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIq-lc-kkj">
-                                        <rect key="frame" x="22" y="4" width="120" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Good Condition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIq-lc-kkj">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -114,17 +114,15 @@
                                 <rect key="frame" x="169" y="627" width="83" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLi-XH-Lic">
-                                        <rect key="frame" x="22" y="4" width="39" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sell" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLi-XH-Lic">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">Keep
-</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.51372549019607838" green="0.82352941176470584" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.51372549019607838" green="0.82352941176470584" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="14"/>
@@ -157,7 +155,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have you sold this shirt?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etq-zI-0cM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have you sell this shirt?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etq-zI-0cM">
                                 <rect key="frame" x="47" y="695" width="320" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -166,7 +164,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b06-WL-fRj"/>
-                        <color key="backgroundColor" red="0.97647058823529409" green="0.96078431372549022" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.96078431372549022" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
                         <outlet property="actionLabel" destination="RLi-XH-Lic" id="usV-1T-Tc0"/>
@@ -193,7 +191,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5bx-W3-t7a">
                                 <rect key="frame" x="0.0" y="171" width="414" height="725"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="10" sectionInsetReference="safeArea" id="IoP-46-Kvx">
                                     <size key="itemSize" width="170" height="203"/>
                                     <size key="headerReferenceSize" width="414" height="70"/>
@@ -265,9 +263,9 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ft4-Db-201"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.96078431372549022" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Sold" id="U75-et-nAX"/>
+                    <navigationItem key="navigationItem" title="Sell" id="U75-et-nAX"/>
                     <connections>
                         <outlet property="collectionViewItemSold" destination="5bx-W3-t7a" id="ZZ1-X6-rqu"/>
                         <outlet property="historyBtnOutlet" destination="vXp-A4-maD" id="V2p-PP-eZK"/>
