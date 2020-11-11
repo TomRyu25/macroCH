@@ -43,6 +43,10 @@ class ItemDonateDetailViewController: UIViewController {
             questionLabel.isHidden = true
         }
         
+        
+        //set title
+        self.title = action(act: itemContainer.action)
+        
         // Do any additional setup after loading the view.
     }
     
