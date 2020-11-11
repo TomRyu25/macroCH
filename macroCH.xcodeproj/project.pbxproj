@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A0620A02555294400199CCE /* ItemSold.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A06209F2555294400199CCE /* ItemSold.storyboard */; };
+		5A0620A52555295D00199CCE /* ItemSoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0620A42555295D00199CCE /* ItemSoldViewController.swift */; };
+		5A0620AA25552E4D00199CCE /* ItemSoldDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0620A925552E4D00199CCE /* ItemSoldDetailViewController.swift */; };
 		5A2EBBD1254731F4008F0ABC /* HomeScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2EBBD0254731F4008F0ABC /* HomeScreenStoryboard.storyboard */; };
 		5A2EBBE32547332A008F0ABC /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2EBBE22547332A008F0ABC /* HomeScreenViewController.swift */; };
 		5AC7FAF225480672003754BE /* HomeScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC7FAF025480672003754BE /* HomeScreenCollectionViewCell.swift */; };
@@ -55,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A06209F2555294400199CCE /* ItemSold.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ItemSold.storyboard; sourceTree = "<group>"; };
+		5A0620A42555295D00199CCE /* ItemSoldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSoldViewController.swift; sourceTree = "<group>"; };
+		5A0620A925552E4D00199CCE /* ItemSoldDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSoldDetailViewController.swift; sourceTree = "<group>"; };
 		5A2EBBD0254731F4008F0ABC /* HomeScreenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreenStoryboard.storyboard; sourceTree = "<group>"; };
 		5A2EBBE22547332A008F0ABC /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		5AC7FAF025480672003754BE /* HomeScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -116,6 +122,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A06209E2555292000199CCE /* Item Sold */ = {
+			isa = PBXGroup;
+			children = (
+				5A06209F2555294400199CCE /* ItemSold.storyboard */,
+				5A0620A42555295D00199CCE /* ItemSoldViewController.swift */,
+				5A0620A925552E4D00199CCE /* ItemSoldDetailViewController.swift */,
+			);
+			path = "Item Sold";
+			sourceTree = "<group>";
+		};
 		5A2EBBCF254731D9008F0ABC /* Home Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +276,7 @@
 		9B8EF99E252C631C00791F6E /* macroCH */ = {
 			isa = PBXGroup;
 			children = (
+				5A06209E2555292000199CCE /* Item Sold */,
 				5A2EBBCF254731D9008F0ABC /* Home Screen */,
 				9B25A054255321890079616A /* Onboarding */,
 				9B25A05A255321890079616A /* Tutorial */,
@@ -409,6 +426,7 @@
 				9B749C7D2553235400BAA29E /* ItemCollectionViewCell.xib in Resources */,
 				9B25A065255321890079616A /* OnboardingHomeView.xib in Resources */,
 				9B8EF9A7252C631C00791F6E /* Main.storyboard in Resources */,
+				5A0620A02555294400199CCE /* ItemSold.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,12 +454,14 @@
 				9B25A062255321890079616A /* Onboarding.swift in Sources */,
 				9B749C812553235400BAA29E /* ItemKeptCollectionReusableView.swift in Sources */,
 				9B749C802553235400BAA29E /* ItemKeptViewController.swift in Sources */,
+				5A0620A52555295D00199CCE /* ItemSoldViewController.swift in Sources */,
 				9B1429282542D92100B25012 /* model.swift in Sources */,
 				9B8EF9A4252C631C00791F6E /* ViewController.swift in Sources */,
 				9B749C7F2553235400BAA29E /* ItemKeptDetailViewController.swift in Sources */,
 				5AC7FAF225480672003754BE /* HomeScreenCollectionViewCell.swift in Sources */,
 				9B25A061255321890079616A /* OnboardingViewController.swift in Sources */,
 				9B749C7C2553235400BAA29E /* ItemCollectionViewCell.swift in Sources */,
+				5A0620AA25552E4D00199CCE /* ItemSoldDetailViewController.swift in Sources */,
 				9B8EF9A0252C631C00791F6E /* AppDelegate.swift in Sources */,
 				9B8EF9DB252C68C000791F6E /* designViewController.swift in Sources */,
 				9B8EF9A2252C631C00791F6E /* SceneDelegate.swift in Sources */,
