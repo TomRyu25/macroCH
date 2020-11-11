@@ -11,7 +11,7 @@
         <!--Donate-->
         <scene sceneID="AFU-QB-Uxz">
             <objects>
-                <viewController storyboardIdentifier="ItemSoldDetailViewController" title="Donate" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sD9-TR-Oy2" customClass="ItemDonateDetailViewController" customModule="macroCH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemDonateDetailViewController" title="Donate" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sD9-TR-Oy2" customClass="ItemDonateDetailViewController" customModule="macroCH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nwi-RF-teR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,10 +183,10 @@
             </objects>
             <point key="canvasLocation" x="-423.1884057971015" y="-72.321428571428569"/>
         </scene>
-        <!--Kept-->
+        <!--Donate-->
         <scene sceneID="ujp-sG-Z6I">
             <objects>
-                <viewController title="Kept" id="EWI-HY-zRR" customClass="ItemDonateViewController" customModule="macroCH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Donate" id="EWI-HY-zRR" customClass="ItemDonateViewController" customModule="macroCH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ysp-il-1yP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -1,8 +1,8 @@
 //
-//  ItemSoldDetailViewController.swift
+//  ItemDonateDetailViewController.swift
 //  macroCH
 //
-//  Created by Laurens Bryan Cahyana on 06/11/20.
+//  Created by Laurens Bryan Cahyana on 10/11/20.
 //
 
 import UIKit

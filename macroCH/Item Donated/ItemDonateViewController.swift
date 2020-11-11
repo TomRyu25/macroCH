@@ -1,8 +1,8 @@
 //
-//  ItemSoldViewController.swift
+//  ItemDonateViewController.swift
 //  macroCH
 //
-//  Created by Laurens Bryan Cahyana on 06/11/20.
+//  Created by Laurens Bryan Cahyana on 10/11/20.
 //
 
 import UIKit
@@ -95,7 +95,7 @@ class ItemDonateViewController: UIViewController {
         //navigation bar set up
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.title = "Kept"
+        self.navigationController?.title = "Donate"
         
         //setup now view
         nowBtnOutlet.titleLabel?.font = UIFont.systemFont(ofSize: 17.0, weight: .bold)
@@ -262,7 +262,7 @@ extension ItemDonateViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = storyboard?.instantiateViewController(identifier: "ItemSoldDetailViewController") as? ItemDonateDetailViewController
+        let vc = storyboard?.instantiateViewController(identifier: "ItemDonateDetailViewController") as? ItemDonateDetailViewController
 
         if nowHistory {
             vc?.itemContainer = itemsNow[indexPath.section][indexPath.row]
