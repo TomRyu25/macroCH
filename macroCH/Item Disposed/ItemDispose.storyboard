@@ -11,7 +11,7 @@
         <!--Dispose-->
         <scene sceneID="AFU-QB-Uxz">
             <objects>
-                <viewController storyboardIdentifier="ItemSoldDetailViewController" title="Dispose" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sD9-TR-Oy2" customClass="ItemDonateDetailViewController" customModule="macroCH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemDisposeDetailViewController" title="Dispose" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sD9-TR-Oy2" customClass="ItemDisposeDetailViewController" customModule="macroCH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nwi-RF-teR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -187,7 +187,7 @@
         <!--Kept-->
         <scene sceneID="ujp-sG-Z6I">
             <objects>
-                <viewController title="Kept" id="EWI-HY-zRR" customClass="ItemDonateViewController" customModule="macroCH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Kept" id="EWI-HY-zRR" customClass="ItemDisposeViewController" customModule="macroCH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ysp-il-1yP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,7 +271,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Dispose" id="U75-et-nAX"/>
                     <connections>
-                        <outlet property="collectionViewItemDonate" destination="5bx-W3-t7a" id="ZZ1-X6-rqu"/>
+                        <outlet property="collectionViewItemDispose" destination="5bx-W3-t7a" id="ZZ1-X6-rqu"/>
                         <outlet property="historyBtnOutlet" destination="vXp-A4-maD" id="V2p-PP-eZK"/>
                         <outlet property="historyUnderline" destination="gXq-EA-anO" id="REr-Uq-lxg"/>
                         <outlet property="nowBtnOutlet" destination="CRf-U2-nqE" id="1j4-kP-MQ7"/>

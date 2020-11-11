@@ -1,13 +1,13 @@
 //
-//  ItemSoldDetailViewController.swift
+//  ItemDisposeDetailViewController.swift
 //  macroCH
 //
-//  Created by Laurens Bryan Cahyana on 06/11/20.
+//  Created by Laurens Bryan Cahyana on 11/11/20.
 //
 
 import UIKit
 
-class ItemDonateDetailViewController: UIViewController {
+class ItemDisposeDetailViewController: UIViewController {
 
     
     @IBOutlet weak var itemTypeLabel: UILabel!

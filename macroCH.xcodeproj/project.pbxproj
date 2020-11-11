@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		5A2EBBD1254731F4008F0ABC /* HomeScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2EBBD0254731F4008F0ABC /* HomeScreenStoryboard.storyboard */; };
 		5A2EBBE32547332A008F0ABC /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2EBBE22547332A008F0ABC /* HomeScreenViewController.swift */; };
-		5A4D23F5255BF70D0014D974 /* ItemDonate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D23F2255BF70D0014D974 /* ItemDonate.storyboard */; };
-		5A4D23F6255BF70D0014D974 /* ItemDonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D23F3255BF70D0014D974 /* ItemDonateViewController.swift */; };
-		5A4D23F7255BF70D0014D974 /* ItemDonateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D23F4255BF70D0014D974 /* ItemDonateDetailViewController.swift */; };
+		5A4D23F5255BF70D0014D974 /* ItemDispose.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4D23F2255BF70D0014D974 /* ItemDispose.storyboard */; };
+		5A4D23F6255BF70D0014D974 /* ItemDisposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D23F3255BF70D0014D974 /* ItemDisposeViewController.swift */; };
+		5A4D23F7255BF70D0014D974 /* ItemDisposeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D23F4255BF70D0014D974 /* ItemDisposeDetailViewController.swift */; };
 		5AC7FAF225480672003754BE /* HomeScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC7FAF025480672003754BE /* HomeScreenCollectionViewCell.swift */; };
 		5AC7FAF325480672003754BE /* HomeScreenCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AC7FAF125480672003754BE /* HomeScreenCollectionViewCell.xib */; };
 		9B1429282542D92100B25012 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1429272542D92100B25012 /* model.swift */; };
@@ -60,9 +60,9 @@
 /* Begin PBXFileReference section */
 		5A2EBBD0254731F4008F0ABC /* HomeScreenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreenStoryboard.storyboard; sourceTree = "<group>"; };
 		5A2EBBE22547332A008F0ABC /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
-		5A4D23F2255BF70D0014D974 /* ItemDonate.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ItemDonate.storyboard; sourceTree = "<group>"; };
-		5A4D23F3255BF70D0014D974 /* ItemDonateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDonateViewController.swift; sourceTree = "<group>"; };
-		5A4D23F4255BF70D0014D974 /* ItemDonateDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDonateDetailViewController.swift; sourceTree = "<group>"; };
+		5A4D23F2255BF70D0014D974 /* ItemDispose.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ItemDispose.storyboard; sourceTree = "<group>"; };
+		5A4D23F3255BF70D0014D974 /* ItemDisposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDisposeViewController.swift; sourceTree = "<group>"; };
+		5A4D23F4255BF70D0014D974 /* ItemDisposeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDisposeDetailViewController.swift; sourceTree = "<group>"; };
 		5AC7FAF025480672003754BE /* HomeScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCollectionViewCell.swift; sourceTree = "<group>"; };
 		5AC7FAF125480672003754BE /* HomeScreenCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenCollectionViewCell.xib; sourceTree = "<group>"; };
 		9B1429272542D92100B25012 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
@@ -134,9 +134,9 @@
 		5A4D23F1255BF70D0014D974 /* Item Disposed */ = {
 			isa = PBXGroup;
 			children = (
-				5A4D23F2255BF70D0014D974 /* ItemDonate.storyboard */,
-				5A4D23F3255BF70D0014D974 /* ItemDonateViewController.swift */,
-				5A4D23F4255BF70D0014D974 /* ItemDonateDetailViewController.swift */,
+				5A4D23F2255BF70D0014D974 /* ItemDispose.storyboard */,
+				5A4D23F3255BF70D0014D974 /* ItemDisposeViewController.swift */,
+				5A4D23F4255BF70D0014D974 /* ItemDisposeDetailViewController.swift */,
 			);
 			path = "Item Disposed";
 			sourceTree = "<group>";
@@ -421,7 +421,7 @@
 				9B8EF9AC252C631D00791F6E /* LaunchScreen.storyboard in Resources */,
 				9B25A067255321890079616A /* RecommendOnboardingView.xib in Resources */,
 				9B8EF9A9252C631D00791F6E /* Assets.xcassets in Resources */,
-				5A4D23F5255BF70D0014D974 /* ItemDonate.storyboard in Resources */,
+				5A4D23F5255BF70D0014D974 /* ItemDispose.storyboard in Resources */,
 				9B25A063255321890079616A /* Onboarding.xib in Resources */,
 				9B25A066255321890079616A /* CameraOnboardingView.xib in Resources */,
 				9B749C7D2553235400BAA29E /* ItemCollectionViewCell.xib in Resources */,
@@ -455,8 +455,8 @@
 				9B749C812553235400BAA29E /* ItemKeptCollectionReusableView.swift in Sources */,
 				9B749C802553235400BAA29E /* ItemKeptViewController.swift in Sources */,
 				9B1429282542D92100B25012 /* model.swift in Sources */,
-				5A4D23F6255BF70D0014D974 /* ItemDonateViewController.swift in Sources */,
-				5A4D23F7255BF70D0014D974 /* ItemDonateDetailViewController.swift in Sources */,
+				5A4D23F6255BF70D0014D974 /* ItemDisposeViewController.swift in Sources */,
+				5A4D23F7255BF70D0014D974 /* ItemDisposeDetailViewController.swift in Sources */,
 				9B8EF9A4252C631C00791F6E /* ViewController.swift in Sources */,
 				9B749C7F2553235400BAA29E /* ItemKeptDetailViewController.swift in Sources */,
 				5AC7FAF225480672003754BE /* HomeScreenCollectionViewCell.swift in Sources */,

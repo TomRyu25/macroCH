@@ -1,15 +1,15 @@
 //
-//  ItemSoldViewController.swift
+//  ItemDisposeViewController.swift
 //  macroCH
 //
-//  Created by Laurens Bryan Cahyana on 06/11/20.
+//  Created by Laurens Bryan Cahyana on 11/11/20.
 //
 
 import UIKit
 
-class ItemDonateViewController: UIViewController {
+class ItemDisposeViewController: UIViewController {
     
-    @IBOutlet weak var collectionViewItemDonate: UICollectionView!
+    @IBOutlet weak var collectionViewItemDispose: UICollectionView!
     
     @IBOutlet weak var nowBtnOutlet: UIButton!
     @IBOutlet weak var nowUnderline: UIView!
@@ -86,11 +86,11 @@ class ItemDonateViewController: UIViewController {
         
         // collection view setup
         
-        collectionViewItemDonate.delegate = self
-        collectionViewItemDonate.dataSource = self
+        collectionViewItemDispose.delegate = self
+        collectionViewItemDispose.dataSource = self
         
         let nib = UINib(nibName: "ItemCollectionViewCell",bundle: nil)
-        self.collectionViewItemDonate.register(nib, forCellWithReuseIdentifier: "ItemCollectionViewCell")
+        self.collectionViewItemDispose.register(nib, forCellWithReuseIdentifier: "ItemCollectionViewCell")
         
         //navigation bar set up
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -134,7 +134,7 @@ class ItemDonateViewController: UIViewController {
     }
     
     func reloadCollectionView() {
-        collectionViewItemDonate.reloadData()
+        collectionViewItemDispose.reloadData()
     }
     
     func currentTime(time: Date) -> String {
@@ -202,7 +202,7 @@ class ItemDonateViewController: UIViewController {
 }
 
 
-extension ItemDonateViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension ItemDisposeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         var numberOfSection: Int = 0
@@ -216,7 +216,7 @@ extension ItemDonateViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        if let sectionHeader = collectionViewItemDonate.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "ItemKeptCollectionReusableView", for: indexPath) as? ItemKeptCollectionReusableView{
+        if let sectionHeader = collectionViewItemDispose.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "ItemKeptCollectionReusableView", for: indexPath) as? ItemKeptCollectionReusableView{
             
             if nowHistory {
                 sectionHeader.headerLabelItemKeptCollectionReusableView.text = currentTime(time: itemsNow[indexPath.section][0].dateSaved)
@@ -242,7 +242,7 @@ extension ItemDonateViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionViewItemDonate.dequeueReusableCell(withReuseIdentifier: "ItemCollectionViewCell", for: indexPath) as! ItemCollectionViewCell
+        let cell = collectionViewItemDispose.dequeueReusableCell(withReuseIdentifier: "ItemCollectionViewCell", for: indexPath) as! ItemCollectionViewCell
         print("\(itemsNow[indexPath.section]) : \(indexPath.section) - \(indexPath.row)")
         
         var selectedItem = itemsNow[indexPath.section][indexPath.row]
@@ -262,7 +262,7 @@ extension ItemDonateViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = storyboard?.instantiateViewController(identifier: "ItemSoldDetailViewController") as? ItemDonateDetailViewController
+        let vc = storyboard?.instantiateViewController(identifier: "ItemDisposeDetailViewController") as? ItemDisposeDetailViewController
 
         if nowHistory {
             vc?.itemContainer = itemsNow[indexPath.section][indexPath.row]
