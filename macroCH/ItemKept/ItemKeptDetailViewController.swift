@@ -55,13 +55,21 @@ class ItemKeptDetailViewController: UIViewController {
     
     func action(act: Int) -> String {
         if (act == 1){
-            return "Kept"
+            return "Keep"
         } else if (act == 2){
-            return "Donated"
+            if itemContainer.processed == 1 {
+                return "Donate"
+            } else {
+                return "Donated"
+            }
         } else if (act == 3){
-            return "Sold"
+            if itemContainer.processed == 1 {
+                return "Sell"
+            } else {
+                return "Sold"
+            }
         } else {
-            return "Thrown"
+            return "Trash"
         }
     }
     /*

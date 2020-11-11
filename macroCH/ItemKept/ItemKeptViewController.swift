@@ -30,11 +30,19 @@ class ItemKeptViewController: UIViewController {
         .init()
     ]
     
+    var itemsNow = [[Baju]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        itemsNow = processedItem(arr: itemKept, section: "now")
+        if itemsNow.count > 1 {
+            if itemsNow[0].count == 0 {
+                itemsNow.remove(at: 0)
+            }
+        }
         
         // collection view setup
         
@@ -56,6 +64,58 @@ class ItemKeptViewController: UIViewController {
     }
     
     
+    func currentTime(time: Date) -> String {
+        if (time.toString(dateFormat: "dd-MM-yyyy") == Date().toString(dateFormat: "dd-MM-yyyy")) {
+            return "Today"
+        } else if (time.toString(dateFormat: "dd-MM-yyyy") ==  Date.yesterday.toString(dateFormat: "dd-MM-yyyy")) {
+            return "Yesterday"
+        } else {
+            return time.toString(dateFormat: "dd-MM-yyyy")
+        }
+    }
+    
+    func processedItem(arr: [Baju],section: String) -> [[Baju]] {
+        let sortedArr = arr.sorted(by: { (baju1: Baju, baju2: Baju) -> Bool in
+            return baju1.dateSaved > baju2.dateSaved
+        })
+        var arrReturn1: [Baju] = []
+        
+        if (section == "now") {
+            for item in sortedArr {
+                if (item.processed == 1) {
+                    arrReturn1.append(item)
+                }
+            }
+        } else if (section == "history") {
+            for item in sortedArr {
+                if (item.processed == 2) {
+                    arrReturn1.append(item)
+                }
+            }
+        }
+        
+        var arrReturn = [[Baju]]()
+        var tempDate: String = ""
+        var tempArr = [Baju]()
+        
+        for item in arrReturn1 {
+            if (item.dateSaved.toString(dateFormat: "dd-MM-yyyy") == tempDate) {
+                tempArr.append(item)
+            } else {
+                tempDate = item.dateSaved.toString(dateFormat: "dd-MM-yyyy")
+                arrReturn.append(tempArr)
+                tempArr = []
+                tempArr.append(item)
+            }
+        }
+        
+        if tempArr.count != 0 {
+            arrReturn.append(tempArr)
+        }
+        
+        return arrReturn
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -72,14 +132,14 @@ class ItemKeptViewController: UIViewController {
 extension ItemKeptViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+        return itemsNow.count
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         if let sectionHeader = collectionViewItemKept.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "ItemKeptCollectionReusableView", for: indexPath) as? ItemKeptCollectionReusableView{
             
-            sectionHeader.headerLabelItemKeptCollectionReusableView.text = "Section \(indexPath.section)"
+            sectionHeader.headerLabelItemKeptCollectionReusableView.text = currentTime(time: itemsNow[indexPath.section][0].dateSaved)
             
             return sectionHeader
         }
@@ -87,13 +147,13 @@ extension ItemKeptViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return itemKept.count
+        return itemsNow[section].count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionViewItemKept.dequeueReusableCell(withReuseIdentifier: "ItemCollectionViewCell", for: indexPath) as! ItemCollectionViewCell
         
-        let selectedItem = itemKept[indexPath.section]
+        let selectedItem = itemsNow[indexPath.section][indexPath.row]
         
         cell.name.text = selectedItem.name
         cell.image.image = UIImage(named: "exampleImage")
