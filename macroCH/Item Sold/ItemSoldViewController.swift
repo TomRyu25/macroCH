@@ -18,7 +18,8 @@ class ItemSoldViewController: UIViewController {
     @IBOutlet weak var historyUnderline: UIView!
     
     
-    var itemsToSell: [Baju] = [
+//    fetch item
+    var items: [Baju] = [
         .init(),
         .init(),
         .init(),
@@ -34,12 +35,39 @@ class ItemSoldViewController: UIViewController {
         .init()
     ]
     
+    var itemsNow = [[Baju]]()
+    var itemsHistory = [[Baju]]()
+    
+    
     var nowHistory: Bool = true
 
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //sample data
+        items[3].dateSaved = Date.yesterday
+        items[7].dateSaved = Date.yesterday
+        items[7].name = "bajunamehistory"
+        items[7].processed = 2
+        items[5].dateSaved = Date.yesterday
+        items[9].dateSaved = Date.yesterday
+        
+        
+        itemsNow = processedItem(arr: items, section: "now")
+        if itemsNow.count > 1 {
+            if itemsNow[0].count == 0 {
+                itemsNow.remove(at: 0)
+            }
+        }
+        
+        itemsHistory = processedItem(arr: items, section: "history")
+        if itemsHistory.count > 1 {
+            if itemsHistory[0].count == 0 {
+                itemsHistory.remove(at: 0)
+            }
+        }
 
         // Do any additional setup after loading the view.
         
@@ -62,6 +90,8 @@ class ItemSoldViewController: UIViewController {
 
 
     }
+    
+    
     @IBAction func nowBtn(_ sender: Any) {
         //nowbtn format
         nowBtnOutlet.titleLabel?.font = UIFont.systemFont(ofSize: 17.0, weight: .bold)
@@ -75,6 +105,7 @@ class ItemSoldViewController: UIViewController {
         reloadCollectionView()
         nowHistory = true
     }
+    
     @IBAction func historyBtn(_ sender: Any) {
         //history format
         historyBtnOutlet.titleLabel?.font = UIFont.systemFont(ofSize: 17.0, weight: .bold)
@@ -103,6 +134,48 @@ class ItemSoldViewController: UIViewController {
         }
     }
     
+    func processedItem(arr: [Baju],section: String) -> [[Baju]] {
+        let sortedArr = arr.sorted(by: { (baju1: Baju, baju2: Baju) -> Bool in
+            return baju1.dateSaved > baju2.dateSaved
+        })
+        var arrReturn1: [Baju] = []
+        
+        if (section == "now") {
+            for item in sortedArr {
+                if (item.processed == 1) {
+                    arrReturn1.append(item)
+                }
+            }
+        } else if (section == "history") {
+            for item in sortedArr {
+                if (item.processed == 2) {
+                    arrReturn1.append(item)
+                }
+            }
+        }
+        
+        var arrReturn = [[Baju]]()
+        var tempDate: String = ""
+        var tempArr = [Baju]()
+        
+        for item in arrReturn1 {
+            if (item.dateSaved.toString(dateFormat: "dd-MM-yyyy") == tempDate) {
+                tempArr.append(item)
+            } else {
+                tempDate = item.dateSaved.toString(dateFormat: "dd-MM-yyyy")
+                arrReturn.append(tempArr)
+                tempArr = []
+                tempArr.append(item)
+            }
+        }
+        
+        if tempArr.count != 0 {
+            arrReturn.append(tempArr)
+        }
+        
+        return arrReturn
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -119,15 +192,24 @@ class ItemSoldViewController: UIViewController {
 extension ItemSoldViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+        var numberOfSection: Int = 0
+        if nowHistory {
+            numberOfSection = itemsNow.count
+        } else {
+            numberOfSection = itemsHistory.count
+        }
+        return numberOfSection
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         if let sectionHeader = collectionViewItemSold.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "ItemKeptCollectionReusableView", for: indexPath) as? ItemKeptCollectionReusableView{
             
-            sectionHeader.headerLabelItemKeptCollectionReusableView.text = "Section \(indexPath.section)"
-            
+            if nowHistory {
+                sectionHeader.headerLabelItemKeptCollectionReusableView.text = currentTime(time: itemsNow[indexPath.section][0].dateSaved)
+            } else {
+                sectionHeader.headerLabelItemKeptCollectionReusableView.text = currentTime(time:  itemsHistory[indexPath.section][0].dateSaved)
+            }
             
             return sectionHeader
         }
@@ -135,25 +217,46 @@ extension ItemSoldViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return itemsToSell.count
+        var numItemsInSection: Int = 0
+        
+        if nowHistory {
+            numItemsInSection = itemsNow[section].count
+        } else {
+            numItemsInSection = itemsHistory[section].count
+        }
+        
+        return numItemsInSection
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionViewItemSold.dequeueReusableCell(withReuseIdentifier: "ItemCollectionViewCell", for: indexPath) as! ItemCollectionViewCell
+        print("\(itemsNow[indexPath.section]) : \(indexPath.section) - \(indexPath.row)")
         
-        let selectedItem = itemsToSell[indexPath.section]
+        var selectedItem = itemsNow[indexPath.section][indexPath.row]
+        
+        if nowHistory {
+            selectedItem = itemsNow[indexPath.section][indexPath.row]
+        } else {
+            selectedItem = itemsHistory[indexPath.section][indexPath.row]
+        }
         
         cell.name.text = selectedItem.name
         cell.image.image = UIImage(named: "makeAChange")
         
         cell.layer.cornerRadius = 20.0
-        
+
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(identifier: "ItemSoldDetailViewController") as? ItemSoldDetailViewController
-        vc?.itemContainer = itemsToSell[indexPath.section]
+
+        if nowHistory {
+            vc?.itemContainer = itemsNow[indexPath.section][indexPath.row]
+        } else {
+            vc?.itemContainer = itemsHistory[indexPath.section][indexPath.row]
+        }
+        
         self.navigationController?.pushViewController(vc!, animated: true)
     }
     

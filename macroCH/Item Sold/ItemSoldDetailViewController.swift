@@ -17,6 +17,9 @@ class ItemSoldDetailViewController: UIViewController {
     
     
     @IBOutlet weak var notYetBtn: UIButton!
+    @IBOutlet weak var yesBtn: UIButton!
+    
+    @IBOutlet weak var questionLabel: UILabel!
     
     var itemContainer: Baju = .init()
     
@@ -32,6 +35,13 @@ class ItemSoldDetailViewController: UIViewController {
         //setup
         notYetBtn.layer.borderWidth = 1
         notYetBtn.layer.borderColor = #colorLiteral(red: 0.8338291645, green: 0.4399331808, blue: 0.3727329373, alpha: 1)
+        
+        //check process
+        if itemContainer.processed == 2 {
+            notYetBtn.isHidden = true
+            yesBtn.isHidden = true
+            questionLabel.isHidden = true
+        }
         
         // Do any additional setup after loading the view.
     }
