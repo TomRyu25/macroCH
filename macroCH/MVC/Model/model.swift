@@ -23,6 +23,7 @@ struct Baju {
     var measurement: UkuranBaju = .init()
     var condition: Condition = .init()
     var dateSaved: Date = Date()
+    var processed: Int = 1
 }
 
 struct UkuranBaju {
