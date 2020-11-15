@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A2EBBD1254731F4008F0ABC /* HomeScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2EBBD0254731F4008F0ABC /* HomeScreenStoryboard.storyboard */; };
-		5A2EBBE32547332A008F0ABC /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2EBBE22547332A008F0ABC /* HomeScreenViewController.swift */; };
-		5AC7FAF225480672003754BE /* HomeScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC7FAF025480672003754BE /* HomeScreenCollectionViewCell.swift */; };
-		5AC7FAF325480672003754BE /* HomeScreenCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AC7FAF125480672003754BE /* HomeScreenCollectionViewCell.xib */; };
+		1D05C3C52550B4F2002A8835 /* Onboarding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C3C42550B4F2002A8835 /* Onboarding.xib */; };
+		1D05C3CA2550B506002A8835 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D05C3C92550B506002A8835 /* Onboarding.swift */; };
+		1D05C3CF2550B51A002A8835 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D05C3CE2550B51A002A8835 /* OnboardingViewController.swift */; };
+		1D05C41325515A6B002A8835 /* OnboardingHomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C41225515A6B002A8835 /* OnboardingHomeView.xib */; };
+		1D05C41B2552087C002A8835 /* ScanOnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C41A2552087C002A8835 /* ScanOnboardingView.xib */; };
+		1D05C420255208FB002A8835 /* CameraOnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C41F255208FB002A8835 /* CameraOnboardingView.xib */; };
+		1D05C42525520918002A8835 /* RecommendOnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C42425520918002A8835 /* RecommendOnboardingView.xib */; };
+		1D05C42A25520932002A8835 /* ActionOnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C42925520932002A8835 /* ActionOnboardingView.xib */; };
+		1D05C42F2552094A002A8835 /* ConfirmationOnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D05C42E2552094A002A8835 /* ConfirmationOnboardingView.xib */; };
 		9B1429282542D92100B25012 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1429272542D92100B25012 /* model.swift */; };
 		9B25A061255321890079616A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B25A056255321890079616A /* OnboardingViewController.swift */; };
 		9B25A062255321890079616A /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B25A058255321890079616A /* Onboarding.swift */; };
@@ -55,10 +60,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5A2EBBD0254731F4008F0ABC /* HomeScreenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreenStoryboard.storyboard; sourceTree = "<group>"; };
-		5A2EBBE22547332A008F0ABC /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
-		5AC7FAF025480672003754BE /* HomeScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCollectionViewCell.swift; sourceTree = "<group>"; };
-		5AC7FAF125480672003754BE /* HomeScreenCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenCollectionViewCell.xib; sourceTree = "<group>"; };
+		1D05C3C42550B4F2002A8835 /* Onboarding.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Onboarding.xib; sourceTree = "<group>"; };
+		1D05C3C92550B506002A8835 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		1D05C3CE2550B51A002A8835 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		1D05C41225515A6B002A8835 /* OnboardingHomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingHomeView.xib; sourceTree = "<group>"; };
+		1D05C41A2552087C002A8835 /* ScanOnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanOnboardingView.xib; sourceTree = "<group>"; };
+		1D05C41F255208FB002A8835 /* CameraOnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraOnboardingView.xib; sourceTree = "<group>"; };
+		1D05C42425520918002A8835 /* RecommendOnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendOnboardingView.xib; sourceTree = "<group>"; };
+		1D05C42925520932002A8835 /* ActionOnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionOnboardingView.xib; sourceTree = "<group>"; };
+		1D05C42E2552094A002A8835 /* ConfirmationOnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmationOnboardingView.xib; sourceTree = "<group>"; };
 		9B1429272542D92100B25012 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		9B25A056255321890079616A /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		9B25A058255321890079616A /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
@@ -116,31 +126,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5A2EBBCF254731D9008F0ABC /* Home Screen */ = {
+		1D05C3BC2550B438002A8835 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				5AC7FAF725480688003754BE /* View */,
-				5AC7FAF92548069F003754BE /* Controller */,
+				1D05C3BE2550B443002A8835 /* View */,
+				1D05C3BD2550B440002A8835 /* Controller */,
 			);
-			path = "Home Screen";
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		5AC7FAF725480688003754BE /* View */ = {
+		1D05C3BD2550B440002A8835 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5A2EBBD0254731F4008F0ABC /* HomeScreenStoryboard.storyboard */,
-				5AC7FAF125480672003754BE /* HomeScreenCollectionViewCell.xib */,
+				1D05C3CE2550B51A002A8835 /* OnboardingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1D05C3BE2550B443002A8835 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D05C3C42550B4F2002A8835 /* Onboarding.xib */,
+				1D05C3C92550B506002A8835 /* Onboarding.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		5AC7FAF92548069F003754BE /* Controller */ = {
+		1D05C41725520698002A8835 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				5AC7FAF025480672003754BE /* HomeScreenCollectionViewCell.swift */,
-				5A2EBBE22547332A008F0ABC /* HomeScreenViewController.swift */,
+				1D05C41925520735002A8835 /* View */,
 			);
-			path = Controller;
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		1D05C41925520735002A8835 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D05C41225515A6B002A8835 /* OnboardingHomeView.xib */,
+				1D05C41A2552087C002A8835 /* ScanOnboardingView.xib */,
+				1D05C41F255208FB002A8835 /* CameraOnboardingView.xib */,
+				1D05C42425520918002A8835 /* RecommendOnboardingView.xib */,
+				1D05C42925520932002A8835 /* ActionOnboardingView.xib */,
+				1D05C42E2552094A002A8835 /* ConfirmationOnboardingView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9B1AFC692542E37200914394 /* Controller */ = {
@@ -260,11 +290,11 @@
 		9B8EF99E252C631C00791F6E /* macroCH */ = {
 			isa = PBXGroup;
 			children = (
-				5A2EBBCF254731D9008F0ABC /* Home Screen */,
-				9B25A054255321890079616A /* Onboarding */,
-				9B25A05A255321890079616A /* Tutorial */,
-				9B749C752553235400BAA29E /* ItemKept */,
-				9B25A06D2553222A0079616A /* MVC */,
+				1D05C41725520698002A8835 /* Tutorial */,
+				1D05C3BC2550B438002A8835 /* Onboarding */,
+				9B1AFC6B2542E37C00914394 /* Model */,
+				9B1AFC6A2542E37700914394 /* View */,
+				9B1AFC692542E37200914394 /* Controller */,
 				9B8EF99F252C631C00791F6E /* AppDelegate.swift */,
 				9B8EF9A1252C631C00791F6E /* SceneDelegate.swift */,
 				9B8EF9DA252C68C000791F6E /* designViewController.swift */,
@@ -396,18 +426,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B25A068255321890079616A /* ScanOnboardingView.xib in Resources */,
-				5AC7FAF325480672003754BE /* HomeScreenCollectionViewCell.xib in Resources */,
-				9B749C7E2553235400BAA29E /* ItemKeptStoryboard.storyboard in Resources */,
-				9B25A064255321890079616A /* ActionOnboardingView.xib in Resources */,
-				5A2EBBD1254731F4008F0ABC /* HomeScreenStoryboard.storyboard in Resources */,
+				1D05C41B2552087C002A8835 /* ScanOnboardingView.xib in Resources */,
 				9B8EF9AC252C631D00791F6E /* LaunchScreen.storyboard in Resources */,
-				9B25A067255321890079616A /* RecommendOnboardingView.xib in Resources */,
+				1D05C42A25520932002A8835 /* ActionOnboardingView.xib in Resources */,
 				9B8EF9A9252C631D00791F6E /* Assets.xcassets in Resources */,
-				9B25A063255321890079616A /* Onboarding.xib in Resources */,
-				9B25A066255321890079616A /* CameraOnboardingView.xib in Resources */,
-				9B749C7D2553235400BAA29E /* ItemCollectionViewCell.xib in Resources */,
-				9B25A065255321890079616A /* OnboardingHomeView.xib in Resources */,
+				1D05C420255208FB002A8835 /* CameraOnboardingView.xib in Resources */,
+				1D05C42525520918002A8835 /* RecommendOnboardingView.xib in Resources */,
+				1D05C41325515A6B002A8835 /* OnboardingHomeView.xib in Resources */,
+				1D05C3C52550B4F2002A8835 /* Onboarding.xib in Resources */,
+				1D05C42F2552094A002A8835 /* ConfirmationOnboardingView.xib in Resources */,
 				9B8EF9A7252C631C00791F6E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,9 +460,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B25A062255321890079616A /* Onboarding.swift in Sources */,
-				9B749C812553235400BAA29E /* ItemKeptCollectionReusableView.swift in Sources */,
-				9B749C802553235400BAA29E /* ItemKeptViewController.swift in Sources */,
+				1D05C3CF2550B51A002A8835 /* OnboardingViewController.swift in Sources */,
+				1D05C3CA2550B506002A8835 /* Onboarding.swift in Sources */,
 				9B1429282542D92100B25012 /* model.swift in Sources */,
 				9B8EF9A4252C631C00791F6E /* ViewController.swift in Sources */,
 				9B749C7F2553235400BAA29E /* ItemKeptDetailViewController.swift in Sources */,
