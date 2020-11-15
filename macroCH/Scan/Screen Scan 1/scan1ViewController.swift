@@ -9,7 +9,8 @@ import UIKit
 
 class scan1ViewController: UIViewController {
     
-    var image: UIImageView!
+    var image: UIImage!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,10 +45,12 @@ extension scan1ViewController: UIImagePickerControllerDelegate, UINavigationCont
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        guard let img = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
-            return
-        }
+        if let img = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {image = img}
+        picker.dismiss(animated: true, completion: nil)
         
-        image.image = img
+        performSegue(withIdentifier: "toScan2", sender: nil)
     }
+    
+    
+    
 }
