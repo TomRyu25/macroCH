@@ -19,6 +19,9 @@
                                 <rect key="frame" x="20" y="44" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="az1-Yt-e9l" kind="unwind" unwindAction="unwindToHome:" id="Q0Z-Sc-1B0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scan Result of Your Clothes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egw-A8-KU6">
                                 <rect key="frame" x="68" y="82" width="279" height="60"/>
@@ -35,21 +38,25 @@
                                 <rect key="frame" x="177" y="195" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Didonasi"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF0-Ja-VNg">
-                                <rect key="frame" x="11" y="388" width="64" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Disimpan"/>
+                                <connections>
+                                    <segue destination="tCF-Km-brE" kind="show" id="KjJ-aT-5bQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgn-Vi-ZPh">
                                 <rect key="frame" x="363" y="388" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Dijual"/>
+                                <connections>
+                                    <segue destination="bN3-bu-DN7" kind="show" id="YhA-UQ-ZM7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVY-FO-ZiR">
-                                <rect key="frame" x="177" y="581" width="60" height="30"/>
+                                <rect key="frame" x="11" y="388" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Didonasi"/>
+                                <state key="normal" title="Disimpan"/>
+                                <connections>
+                                    <segue destination="ahK-YL-TC1" kind="show" id="f4v-nW-dTs"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlH-la-B8t">
                                 <rect key="frame" x="34" y="662" width="346" height="130"/>
@@ -58,17 +65,67 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF0-Ja-VNg">
+                                <rect key="frame" x="178" y="581" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dibuang"/>
+                                <connections>
+                                    <segue destination="E6N-0x-hRc" kind="show" id="Gjh-Am-xtr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="I6m-R2-SgH"/>
                         <color key="backgroundColor" red="0.92156862745098034" green="0.9766337276" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
+                        <outlet property="labelSuggestion" destination="dlH-la-B8t" id="7nu-Lc-y7m"/>
                         <outlet property="previewImage" destination="ieT-5Q-kUV" id="d8q-zk-8av"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUk-20-B3A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="az1-Yt-e9l" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="253.62318840579712" y="178.79464285714286"/>
+        </scene>
+        <!--itemSold-->
+        <scene sceneID="fEB-rD-nSI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ItemSold" referencedIdentifier="itemSold" id="bN3-bu-DN7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="G6z-6v-hcv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DEk-sk-OOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="198"/>
+        </scene>
+        <!--itemDonated-->
+        <scene sceneID="hom-YH-43x">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="itemDonated" storyboardName="ItemDonate" referencedIdentifier="itemDonated" id="tCF-Km-brE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LMn-vD-ahV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iqu-wF-K8h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797" y="110"/>
+        </scene>
+        <!--itemKept-->
+        <scene sceneID="uWY-TJ-sJX">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ItemKept" storyboardName="ItemKeptStoryboard" referencedIdentifier="itemKept" id="ahK-YL-TC1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QAh-p4-0qC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UWR-Qd-zeY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="156"/>
+        </scene>
+        <!--itemDispose-->
+        <scene sceneID="Jti-uc-l5q">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="itemDispose" storyboardName="ItemDispose" referencedIdentifier="itemDispose" id="E6N-0x-hRc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wvk-wm-mKY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mKp-pB-2ug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="242"/>
         </scene>
     </scenes>
 </document>

@@ -24,5 +24,12 @@ class Onboarding: UIView {
         viewFromXib.frame = self.bounds
         addSubview(viewFromXib)
     }
+    
+    @IBAction func button(_ sender: Any){
+        let storyboard = UIStoryboard(name: "HomeScreenStoryboard", bundle: nil)
+        let mainVC = storyboard.instantiateViewController(withIdentifier: "mainVC") as! StartViewController
+        mainVC.modalPresentationStyle = .fullScreen
+        self.present(mainVC, animated: true, completion: nil)
+    }
 
 }

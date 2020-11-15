@@ -1,21 +1,19 @@
 //
-//  ItemKeptDetailViewController.swift
+//  DisposedDetailViewController.swift
 //  macroCH
 //
-//  Created by Laurens Bryan Cahyana on 04/11/20.
+//  Created by Gilbert Gozalie on 11/5/20.
 //
 
 import UIKit
 
-class ItemKeptDetailViewController: UIViewController {
-    
+class DisposedDetailViewController: UIViewController {
+
     @IBOutlet weak var itemTypeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    
     @IBOutlet weak var conditionLabel: UILabel!
     @IBOutlet weak var actionLabel: UILabel!
-    
-    
-    @IBOutlet weak var notYetBtn: UIButton!
     
     var itemContainer: Baju = .init()
     
@@ -27,11 +25,11 @@ class ItemKeptDetailViewController: UIViewController {
         dateLabel.text = itemContainer.dateSaved.toString(dateFormat: "dd/MM/yyyy")
         conditionLabel.text = condition(itemCondition: itemContainer.condition)
         actionLabel.text = action(act: itemContainer.action)
-        
+
         //setup
-        notYetBtn.layer.borderWidth = 1
-        notYetBtn.layer.borderColor = #colorLiteral(red: 0.8338291645, green: 0.4399331808, blue: 0.3727329373, alpha: 1)
-        
+//        notYetBtn.layer.borderWidth = 1
+//        notYetBtn.layer.borderColor = #colorLiteral(red: 0.8338291645, green: 0.4399331808, blue: 0.3727329373, alpha: 1)
+
         // Do any additional setup after loading the view.
     }
     
@@ -55,21 +53,13 @@ class ItemKeptDetailViewController: UIViewController {
     
     func action(act: Int) -> String {
         if (act == 1){
-            return "Keep"
+            return "Kept"
         } else if (act == 2){
-            if itemContainer.processed == 1 {
-                return "Donate"
-            } else {
-                return "Donated"
-            }
+            return "Donated"
         } else if (act == 3){
-            if itemContainer.processed == 1 {
-                return "Sell"
-            } else {
-                return "Sold"
-            }
+            return "Sold"
         } else {
-            return "Trash"
+            return "Thrown"
         }
     }
     /*

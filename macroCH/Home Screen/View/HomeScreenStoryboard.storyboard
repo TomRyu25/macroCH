@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EbH-fM-ImD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,7 +12,7 @@
         <!--Home Screen View Controller-->
         <scene sceneID="HqK-0h-9oT">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="EbH-fM-ImD" customClass="HomeScreenViewController" customModule="macroCH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EbH-fM-ImD" customClass="HomeScreenViewController" customModule="macroCH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xdz-Tn-hav">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,6 +53,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1h1-jc-lFn">
                                                 <rect key="frame" x="0.0" y="0.0" width="167" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <segue destination="RQH-Y8-0HA" kind="show" id="aQk-Hw-Rad"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.8862745098" green="0.66666666669999997" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -73,19 +76,19 @@
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="3g1-Ms-JVF" kind="show" id="3VT-XM-TaD"/>
+                                                    <segue destination="Y4b-8t-pCh" kind="show" id="XpX-qH-m4N"/>
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uC1-93-b14">
                                                 <rect key="frame" x="240" y="17.5" width="102" height="106.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" red="0.69803921570000005" green="0.87058823529999996" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <imageReference key="image" image="viewfinder" catalog="system" symbolScale="large"/>
+                                                <imageReference key="image" image="􀎹" symbolScale="large"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scan Your Clothes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBf-AK-lfd">
-                                                <rect key="frame" x="25" y="60" width="191" height="28"/>
+                                                <rect key="frame" x="25" y="60" width="183" height="27"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -111,6 +114,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTP-3A-1ZK">
                                                 <rect key="frame" x="0.0" y="0.0" width="167" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <segue destination="aiY-R5-PjO" kind="show" id="W3E-cp-MYZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.8862745098" green="0.66666666669999997" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -137,6 +143,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MS9-MO-b3p">
                                                 <rect key="frame" x="0.0" y="0.0" width="167" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <segue destination="8G5-Z1-ecw" kind="show" id="Hb6-0v-ruO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.8862745098" green="0.66666666669999997" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -168,6 +177,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGo-yf-m9B">
                                                 <rect key="frame" x="0.0" y="0.0" width="167" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <segue destination="iSG-0m-DPp" kind="show" id="2T8-pn-2g4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.8862745098" green="0.66666666669999997" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -298,6 +310,7 @@
                             <constraint firstItem="BSH-f7-ZeM" firstAttribute="leading" secondItem="xdz-Tn-hav" secondAttribute="leading" id="zQr-wC-aZB"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="5sF-oi-8Kr"/>
                     <size key="freeformSize" width="414" height="1400"/>
                     <connections>
                         <outlet property="donationPlaceImageViewOutlet" destination="JZV-de-UtP" id="rl9-NP-u6j"/>
@@ -329,21 +342,61 @@
             </objects>
             <point key="canvasLocation" x="-291.304347826087" y="76.339285714285708"/>
         </scene>
-        <!--scan1-->
-        <scene sceneID="VMp-X0-yV0">
+        <!--itemSold-->
+        <scene sceneID="n0H-hT-K3V">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="scan1" storyboardName="scan1Storyboard" referencedIdentifier="scan1" id="3g1-Ms-JVF" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="qwU-Zs-HQS"/>
+                <viewControllerPlaceholder storyboardIdentifier="itemSold" storyboardName="ItemSold" referencedIdentifier="itemSold" id="iSG-0m-DPp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8lj-Zk-dWB"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aSq-5t-rzU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJc-aa-jKT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="-45"/>
+            <point key="canvasLocation" x="341" y="134"/>
+        </scene>
+        <!--itemDispose-->
+        <scene sceneID="lSM-Kw-y6K">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="itemDispose" storyboardName="ItemDispose" referencedIdentifier="itemDispose" id="RQH-Y8-0HA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bZL-5C-Ydd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o8r-15-9ET" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="307" y="26"/>
+        </scene>
+        <!--itemKept-->
+        <scene sceneID="9jE-yh-iSw">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="itemKept" storyboardName="ItemKeptStoryboard" referencedIdentifier="itemKept" id="aiY-R5-PjO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="sQ0-h4-3NA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JhA-vj-wrI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="307" y="60"/>
+        </scene>
+        <!--itemDonated-->
+        <scene sceneID="4qX-45-OTe">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="itemDonated" storyboardName="ItemDonate" referencedIdentifier="itemDonated" id="8G5-Z1-ecw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dow-9x-Bmw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TnN-A6-JEU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="323" y="92"/>
+        </scene>
+        <!--scan1-->
+        <scene sceneID="Qnu-4I-lek">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="scan1" storyboardName="scan1Storyboard" referencedIdentifier="scan1" id="Y4b-8t-pCh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="TM2-eV-5Sx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHv-R6-VSL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="371" y="-5"/>
         </scene>
     </scenes>
     <resources>
         <image name="makeAChange" width="2550" height="1700"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="viewfinder" catalog="system" width="128" height="115"/>
+        <image name="􀎹" width="90" height="90"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

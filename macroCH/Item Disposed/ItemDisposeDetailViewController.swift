@@ -1,21 +1,26 @@
 //
-//  ItemKeptDetailViewController.swift
+//  ItemDisposeDetailViewController.swift
 //  macroCH
 //
-//  Created by Laurens Bryan Cahyana on 04/11/20.
+//  Created by Laurens Bryan Cahyana on 11/11/20.
 //
 
 import UIKit
 
-class ItemKeptDetailViewController: UIViewController {
+class ItemDisposeDetailViewController: UIViewController {
+
     
     @IBOutlet weak var itemTypeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var conditionLabel: UILabel!
     @IBOutlet weak var actionLabel: UILabel!
     
+    @IBOutlet weak var conditionView: UIView!
     
     @IBOutlet weak var notYetBtn: UIButton!
+    @IBOutlet weak var yesBtn: UIButton!
+    
+    @IBOutlet weak var questionLabel: UILabel!
     
     var itemContainer: Baju = .init()
     
@@ -31,6 +36,20 @@ class ItemKeptDetailViewController: UIViewController {
         //setup
         notYetBtn.layer.borderWidth = 1
         notYetBtn.layer.borderColor = #colorLiteral(red: 0.8338291645, green: 0.4399331808, blue: 0.3727329373, alpha: 1)
+        
+        conditionView.layer.borderWidth = 1
+        conditionView.layer.borderColor = #colorLiteral(red: 0.6745098039, green: 0.6745098039, blue: 0.6745098039, alpha: 1)
+        
+        //check process
+        if itemContainer.processed == 2 {
+            notYetBtn.isHidden = true
+            yesBtn.isHidden = true
+            questionLabel.isHidden = true
+        }
+        
+        
+        //set title
+        self.title = action(act: itemContainer.action)
         
         // Do any additional setup after loading the view.
     }
@@ -49,7 +68,7 @@ class ItemKeptDetailViewController: UIViewController {
         if ((itemCondition.hole == false) && (itemCondition.wearable == false)) {
             return "Good Condition"
         } else {
-            return "Bad Condition"
+            return "Perforated"
         }
     }
     
@@ -69,9 +88,16 @@ class ItemKeptDetailViewController: UIViewController {
                 return "Sold"
             }
         } else {
-            return "Trash"
+            return "Dispose"
         }
     }
+    
+    @IBAction func yesBtnAction(_ sender: Any) {
+        itemContainer.processed = 2
+        itemContainer.dateSaved = Date()
+    }
+    
+    
     /*
     // MARK: - Navigation
 
@@ -81,17 +107,4 @@ class ItemKeptDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-}
-
-
-
-extension Date
-{
-    func toString( dateFormat format  : String ) -> String
-    {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = format
-        return dateFormatter.string(from: self)
-    }
-
 }

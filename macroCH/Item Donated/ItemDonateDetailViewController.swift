@@ -1,13 +1,14 @@
 //
-//  ItemKeptDetailViewController.swift
+//  ItemDonateDetailViewController.swift
 //  macroCH
 //
-//  Created by Laurens Bryan Cahyana on 04/11/20.
+//  Created by Laurens Bryan Cahyana on 10/11/20.
 //
 
 import UIKit
 
-class ItemKeptDetailViewController: UIViewController {
+class ItemDonateDetailViewController: UIViewController {
+
     
     @IBOutlet weak var itemTypeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
@@ -16,6 +17,9 @@ class ItemKeptDetailViewController: UIViewController {
     
     
     @IBOutlet weak var notYetBtn: UIButton!
+    @IBOutlet weak var yesBtn: UIButton!
+    
+    @IBOutlet weak var questionLabel: UILabel!
     
     var itemContainer: Baju = .init()
     
@@ -31,6 +35,17 @@ class ItemKeptDetailViewController: UIViewController {
         //setup
         notYetBtn.layer.borderWidth = 1
         notYetBtn.layer.borderColor = #colorLiteral(red: 0.8338291645, green: 0.4399331808, blue: 0.3727329373, alpha: 1)
+        
+        //check process
+        if itemContainer.processed == 2 {
+            notYetBtn.isHidden = true
+            yesBtn.isHidden = true
+            questionLabel.isHidden = true
+        }
+        
+        
+        //set title
+        self.title = action(act: itemContainer.action)
         
         // Do any additional setup after loading the view.
     }
@@ -72,6 +87,13 @@ class ItemKeptDetailViewController: UIViewController {
             return "Trash"
         }
     }
+    
+    @IBAction func yesBtnAction(_ sender: Any) {
+        itemContainer.processed = 2
+        itemContainer.dateSaved = Date()
+    }
+    
+    
     /*
     // MARK: - Navigation
 
@@ -81,17 +103,4 @@ class ItemKeptDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-}
-
-
-
-extension Date
-{
-    func toString( dateFormat format  : String ) -> String
-    {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = format
-        return dateFormatter.string(from: self)
-    }
-
 }

@@ -14,6 +14,7 @@ class scan2ViewController: UIViewController {
     
     
     @IBOutlet weak var previewImage: UIImageView!
+    @IBOutlet weak var labelSuggestion: UILabel!
     var selectedImage: UIImage!
     
     

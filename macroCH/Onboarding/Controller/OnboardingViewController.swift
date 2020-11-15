@@ -9,14 +9,16 @@ import UIKit
 
 class OnboardingViewController: UIViewController {
 
-
+    let test = Onboarding(frame: CGRect(x: 20, y: 0, width: 374, height: 818))
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let test = Onboarding(frame: CGRect(x: 20, y: 0, width: 374, height: 818))
         self.view.addSubview(test)
+        
         // Do any additional setup after loading the view.
     }
+    
     
 
     /*
