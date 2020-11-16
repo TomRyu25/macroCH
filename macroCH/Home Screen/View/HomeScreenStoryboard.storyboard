@@ -12,7 +12,7 @@
         <!--Home Screen View Controller-->
         <scene sceneID="HqK-0h-9oT">
             <objects>
-                <viewController storyboardIdentifier="mainVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EbH-fM-ImD" customClass="HomeScreenViewController" customModule="macroCH" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="EbH-fM-ImD" customClass="HomeScreenViewController" customModule="macroCH" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xdz-Tn-hav">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -395,7 +395,7 @@
         <!--Navigation Controller-->
         <scene sceneID="f1E-HU-Lc1">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Jm7-bX-pTq" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mainVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="Jm7-bX-pTq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3dX-wN-AKx">
                         <autoresizingMask key="autoresizingMask"/>

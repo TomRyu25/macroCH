@@ -17,7 +17,7 @@ class OnboardingViewController: UIViewController {
     
     @IBAction func button(_ sender: Any){
         let storyboard = UIStoryboard(name: "HomeScreenStoryboard", bundle: nil)
-        let mainVC = storyboard.instantiateViewController(withIdentifier: "mainVC") as! HomeScreenViewController
+        let mainVC = storyboard.instantiateViewController(withIdentifier: "mainVC") //as! HomeScreenViewController
         mainVC.modalPresentationStyle = .fullScreen
         self.present(mainVC, animated: true, completion: nil)
     }
