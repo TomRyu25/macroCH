@@ -8,17 +8,21 @@
 import UIKit
 
 class OnboardingViewController: UIViewController {
-
-    let test = Onboarding(frame: CGRect(x: 20, y: 0, width: 374, height: 818))
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addSubview(test)
         
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func button(_ sender: Any){
+        let storyboard = UIStoryboard(name: "HomeScreenStoryboard", bundle: nil)
+        let mainVC = storyboard.instantiateViewController(withIdentifier: "mainVC") as! HomeScreenViewController
+        mainVC.modalPresentationStyle = .fullScreen
+        self.present(mainVC, animated: true, completion: nil)
+    }
+    
+}
     
 
     /*
@@ -30,5 +34,3 @@ class OnboardingViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-}

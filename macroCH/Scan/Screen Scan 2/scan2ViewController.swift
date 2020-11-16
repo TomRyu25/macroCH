@@ -64,6 +64,15 @@ class scan2ViewController: UIViewController {
     
     
     func drawDetectionsOnPreview(detections: [VNRecognizedObjectObservation]) {
+        
+        let count = detections.count
+        
+        if count == 0 {
+            labelSuggestion.text = ""
+        }else{
+            labelSuggestion.text = ""
+        }
+        
          guard let image = self.selectedImage else {
              return
          }
@@ -83,6 +92,7 @@ class scan2ViewController: UIViewController {
              let rectangle = CGRect(x: boundingBox.minX*image.size.width, y: (1-boundingBox.minY-boundingBox.height)*image.size.height, width: boundingBox.width*image.size.width, height: boundingBox.height*image.size.height)
              UIColor(red: 0, green: 1, blue: 0, alpha: 0.4).setFill()
              UIRectFillUsingBlendMode(rectangle, CGBlendMode.normal)
+
          }
 
          let newImage = UIGraphicsGetImageFromCurrentImageContext()

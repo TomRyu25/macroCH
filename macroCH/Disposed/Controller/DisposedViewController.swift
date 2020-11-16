@@ -93,8 +93,8 @@ extension DisposedViewController: UICollectionViewDelegate, UICollectionViewData
 
         let selectedItem = disposed[indexPath.section]
 
-        cell.collectionLabel.text = selectedItem.name
-        cell.collectionImage.image = UIImage(named: "exampleImage")
+        cell.name.text = selectedItem.name
+        cell.image.image = UIImage(named: "exampleImage")
 
 
 
