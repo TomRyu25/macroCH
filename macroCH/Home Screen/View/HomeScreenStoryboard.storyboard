@@ -43,8 +43,8 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.81960784310000001" green="0.3921568627" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Disposed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvB-Oj-ise">
-                                                <rect key="frame" x="25" y="52" width="83" height="23"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dispose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvB-Oj-ise">
+                                                <rect key="frame" x="25" y="52" width="72" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                                 <nil key="textColor"/>
@@ -80,13 +80,13 @@
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uC1-93-b14">
-                                                <rect key="frame" x="240" y="17.5" width="102" height="106.5"/>
+                                                <rect key="frame" x="8" y="22" width="102" height="106.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" red="0.69803921570000005" green="0.87058823529999996" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <imageReference key="image" image="􀎹" symbolScale="large"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scan Your Clothes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBf-AK-lfd">
-                                                <rect key="frame" x="25" y="60" width="183" height="27"/>
+                                                <rect key="frame" x="142" y="62" width="183" height="27"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                                 <nil key="textColor"/>
@@ -102,10 +102,10 @@
                                             <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xs6-MU-8GS">
                                                 <rect key="frame" x="127" y="0.0" width="40" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.81960784310000001" green="0.3921568627" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kept" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6o-KR-q2k">
-                                                <rect key="frame" x="25" y="52" width="41" height="23"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Keep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6o-KR-q2k">
+                                                <rect key="frame" x="25" y="52" width="45" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                                 <nil key="textColor"/>
@@ -119,7 +119,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.8862745098" green="0.66666666669999997" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.97096365689999997" green="0.92112648490000004" blue="0.67054575679999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" button="YES"/>
                                         </accessibility>
@@ -131,10 +131,10 @@
                                             <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CVy-HU-ZmF">
                                                 <rect key="frame" x="127" y="0.0" width="40" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.81960784310000001" green="0.3921568627" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owL-2b-yNB">
-                                                <rect key="frame" x="25" y="52" width="76" height="23"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owL-2b-yNB">
+                                                <rect key="frame" x="25" y="52" width="64" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                                 <nil key="textColor"/>
@@ -148,7 +148,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.8862745098" green="0.66666666669999997" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.57939279079999995" green="0.70192736389999999" blue="0.89806443449999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" button="YES"/>
                                         </accessibility>
@@ -165,10 +165,10 @@
                                             <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Df3-4g-TA3">
                                                 <rect key="frame" x="127" y="0.0" width="40" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.81960784310000001" green="0.3921568627" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8T-Hx-SbA">
-                                                <rect key="frame" x="25" y="52" width="40" height="23"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8T-Hx-SbA">
+                                                <rect key="frame" x="25" y="52" width="33" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                                 <nil key="textColor"/>
@@ -182,7 +182,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.8862745098" green="0.66666666669999997" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.91590207820000002" green="0.75963050129999998" blue="0.568592608" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" button="YES"/>
                                         </accessibility>
@@ -229,7 +229,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="makeAChange" translatesAutoresizingMaskIntoConstraints="NO" id="uJE-LX-jaO">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Scan1" translatesAutoresizingMaskIntoConstraints="NO" id="uJE-LX-jaO">
                                         <rect key="frame" x="30" y="1030" width="354" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -240,12 +240,20 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Scan" translatesAutoresizingMaskIntoConstraints="NO" id="t3J-nL-p2L">
+                                        <rect key="frame" x="30" y="1150" width="354" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Scan3" translatesAutoresizingMaskIntoConstraints="NO" id="UYQ-UD-dNL">
+                                        <rect key="frame" x="30" y="1270" width="354" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t7P-Vl-36h">
-                                        <rect key="frame" x="30" y="1030" width="354" height="100"/>
+                                        <rect key="frame" x="35" y="1087" width="344" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Title 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7FC-TE-WJK">
-                                                <rect key="frame" x="20" y="65" width="314" height="18"/>
+                                                <rect key="frame" x="22" y="8" width="314" height="18"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -254,16 +262,12 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="separatorColor"/>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="makeAChange" translatesAutoresizingMaskIntoConstraints="NO" id="t3J-nL-p2L">
-                                        <rect key="frame" x="30" y="1150" width="354" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GKi-xM-Jor">
-                                        <rect key="frame" x="30" y="1150" width="354" height="100"/>
+                                        <rect key="frame" x="35" y="1207" width="344" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Title 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1oO-2t-47h">
-                                                <rect key="frame" x="20" y="65" width="314" height="18"/>
+                                                <rect key="frame" x="15" y="10" width="314" height="18"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -272,16 +276,12 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="separatorColor"/>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="makeAChange" translatesAutoresizingMaskIntoConstraints="NO" id="UYQ-UD-dNL">
-                                        <rect key="frame" x="30" y="1270" width="354" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IkI-yS-iAw">
-                                        <rect key="frame" x="30" y="1270" width="354" height="100"/>
+                                        <rect key="frame" x="35" y="1327" width="344" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Title 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cU3-U8-Vh7">
-                                                <rect key="frame" x="20" y="65" width="314" height="18"/>
+                                                <rect key="frame" x="17" y="10" width="314" height="18"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -332,6 +332,7 @@
                         <outlet property="newsTitle3ImageOutlet" destination="UYQ-UD-dNL" id="KjT-MG-d40"/>
                         <outlet property="newsTitle3LabelOutlet" destination="cU3-U8-Vh7" id="q96-MG-gm4"/>
                         <outlet property="newsTitle3ViewOutlet" destination="IkI-yS-iAw" id="llL-zX-jXV"/>
+                        <outlet property="scanButton" destination="tYn-dt-4rN" id="erA-ky-PhK"/>
                         <outlet property="scanButtonOutlet" destination="tYn-dt-4rN" id="5YP-yg-mT6"/>
                         <outlet property="scanViewOutlet" destination="9QC-Yn-zVn" id="2sG-yE-MD3"/>
                         <outlet property="userNameLabelOutlet" destination="6I3-UG-w58" id="00q-zE-3zP"/>
@@ -382,10 +383,10 @@
             </objects>
             <point key="canvasLocation" x="1231.8840579710145" y="91.741071428571431"/>
         </scene>
-        <!--scan1-->
+        <!--scan2-->
         <scene sceneID="Qnu-4I-lek">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="scan1" storyboardName="scan1Storyboard" referencedIdentifier="scan1" id="Y4b-8t-pCh" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="scan1" storyboardName="scan2Storyboard" referencedIdentifier="scan2" id="Y4b-8t-pCh" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="TM2-eV-5Sx"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHv-R6-VSL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -411,6 +412,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Scan" width="364" height="110"/>
+        <image name="Scan1" width="364" height="110"/>
+        <image name="Scan3" width="364" height="110"/>
         <image name="makeAChange" width="2550" height="1700"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="􀎹" width="90" height="90"/>
@@ -422,6 +426,15 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -8,9 +8,10 @@
 import UIKit
 
 class HomeScreenViewController: UIViewController {
-    var userName: String = "Marvin Marcopolo"
-    var userProfileImage: UIImage = #imageLiteral(resourceName: "profile")
+    var userName: String = "Cindy"
+    var userProfileImage: UIImage = #imageLiteral(resourceName: "Oval")
     
+    @IBOutlet weak var scanButton: UIButton!
     
     @IBOutlet weak var userNameLabelOutlet: UILabel!
     @IBOutlet weak var userProfileImageOutlet: UIImageView!
@@ -51,9 +52,9 @@ class HomeScreenViewController: UIViewController {
     
     
     var newsData: [News] = [
-        News(title: "News Title 1", details: "asdfasdf", content: "asdfasdfasdf", date: Date()),
-        News(title: "News Title 2", details: "qwerqwer", content: "qwerqwerqwer", date: Date()),
-        News(title: "News Title 3", details: "zxcvzxcv", content: "zxcvzxcvzxcv", date: Date())
+        News(title: "Decluttering Clothes the Easy Way", details: "asdfasdf", content: "asdfasdfasdf", date: Date()),
+        News(title: "A Quick Guide to Donating Clothes", details: "qwerqwer", content: "qwerqwerqwer", date: Date()),
+        News(title: "How to Donate Clothes Ethically", details: "zxcvzxcv", content: "zxcvzxcvzxcv", date: Date())
     ]
     
     
@@ -107,6 +108,8 @@ class HomeScreenViewController: UIViewController {
     
     func roundedCornerHomeScreen() {
         userProfileImageOutlet.layer.cornerRadius = 50
+        
+        scanButton.layer.cornerRadius = 20
         
         scanViewOutlet.layer.cornerRadius = 20
         scanViewOutlet.layer.cornerRadius = 20

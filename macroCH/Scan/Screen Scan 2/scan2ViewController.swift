@@ -15,7 +15,7 @@ class scan2ViewController: UIViewController {
     
     @IBOutlet weak var previewImage: UIImageView!
     @IBOutlet weak var labelSuggestion: UILabel!
-    var selectedImage: UIImage!
+    var selectedImage: UIImage! = #imageLiteral(resourceName: "Group 3")
     
     
     lazy var detectionRequest: VNCoreMLRequest = {
@@ -68,9 +68,9 @@ class scan2ViewController: UIViewController {
         let count = detections.count
         
         if count == 0 {
-            labelSuggestion.text = ""
+            labelSuggestion.text = "this is testing label"
         }else{
-            labelSuggestion.text = ""
+            labelSuggestion.text = "This shirt has (kondisi) and its time to (suggestion). are you sure you want to (pilihan)"
         }
         
          guard let image = self.selectedImage else {
@@ -104,6 +104,8 @@ class scan2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         updateDectection(for: selectedImage)
         
