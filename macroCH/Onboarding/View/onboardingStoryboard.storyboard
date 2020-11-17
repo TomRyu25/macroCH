@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Getting Started" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqw-p2-CcG">
-                                <rect key="frame" x="112" y="374" width="190" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Getting Started" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqw-p2-CcG">
+                                <rect key="frame" x="111" y="460" width="190" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="77f-fe-PUd"/>
                                     <constraint firstAttribute="height" constant="43" id="MfR-Mx-dyv"/>
@@ -25,20 +24,11 @@
                                     <constraint firstAttribute="width" constant="190" id="a3K-TA-EgK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I41-l6-acD">
-                                <rect key="frame" x="107" y="153" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="4KB-3m-06o"/>
-                                    <constraint firstAttribute="width" constant="200" id="aKi-Dw-j2m"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="ivp-5M-VEW"/>
-                                    <constraint firstAttribute="height" constant="200" id="lFB-jm-PYs"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Clutterless. Together, we'll decide what to do with your fashion items, and also take action. Are you ready?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4W1-GP-Lgd">
-                                <rect key="frame" x="45" y="425" width="324" height="109"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to Clutterless. Together, we'll decide what to do with your fashion items, and also take action. Are you ready?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4W1-GP-Lgd">
+                                <rect key="frame" x="45" y="511" width="324" height="109"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="324" id="U4j-Ce-VpD"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="109" id="UTA-HP-oye"/>
@@ -46,28 +36,34 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="324" id="x21-KR-X7X"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccE-77-gVp">
-                                <rect key="frame" x="93" y="542" width="229" height="30"/>
-                                <color key="backgroundColor" red="0.19870889189999999" green="0.2202794552" blue="0.54905205970000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccE-77-gVp">
+                                <rect key="frame" x="92" y="628" width="229" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="BDo-kP-94I"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="229" id="S09-cd-naj"/>
                                     <constraint firstAttribute="width" constant="229" id="hGf-Dh-Oa3"/>
                                     <constraint firstAttribute="height" constant="30" id="tqA-Bo-LQL"/>
                                 </constraints>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                </state>
+                                <state key="normal" image="butononboarding"/>
                                 <connections>
                                     <action selector="button:" destination="RDY-M0-QEs" eventType="touchUpInside" id="ign-wJ-6mD"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Group 3" translatesAutoresizingMaskIntoConstraints="NO" id="I41-l6-acD">
+                                <rect key="frame" x="77" y="195" width="261" height="257"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="4KB-3m-06o"/>
+                                    <constraint firstAttribute="width" constant="200" id="aKi-Dw-j2m"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="ivp-5M-VEW"/>
+                                    <constraint firstAttribute="height" constant="200" id="lFB-jm-PYs"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AZ0-DC-C8L"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.17290848489999999" green="0.19962909819999999" blue="0.2196110785" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="4W1-GP-Lgd" firstAttribute="top" secondItem="yqw-p2-CcG" secondAttribute="bottom" constant="8" symbolic="YES" id="1cG-d4-L7U"/>
                             <constraint firstItem="AZ0-DC-C8L" firstAttribute="trailing" secondItem="I41-l6-acD" secondAttribute="trailing" constant="107" id="Aw3-xp-cbk"/>
@@ -107,8 +103,7 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="Group 3" width="286" height="252"/>
+        <image name="butononboarding" width="293" height="40"/>
     </resources>
 </document>
