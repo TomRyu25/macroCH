@@ -28,22 +28,22 @@
                                 <rect key="frame" x="0.0" y="121" width="414" height="1715"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRg-ey-RRt">
-                                        <rect key="frame" x="30" y="10" width="100.5" height="25.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Decluttering Clothes the Easy Way" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRg-ey-RRt">
+                                        <rect key="frame" x="30" y="10" width="354" height="26"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News Source" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKH-wv-ElI">
-                                        <rect key="frame" x="30" y="66" width="91" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Berita.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKH-wv-ElI">
+                                        <rect key="frame" x="30" y="66" width="74" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="highlightedColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aR2-tC-sbk">
-                                        <rect key="frame" x="179" y="66" width="87" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 hour ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aR2-tC-sbk">
+                                        <rect key="frame" x="175" y="66" width="72" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,9 +67,9 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vo-yY-L8B">
-                                        <rect key="frame" x="30" y="1446" width="354" height="250"/>
+                                        <rect key="frame" x="30" y="1446" width="354" height="214"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <string key="text">There is a simple task to complete every other day. I know life can get busy and schedules fill up, so by assigning a task only every other day, you essentially have two days to complete each one. That way if you get busy and miss a day or you have a lot of a particular item and it ends up taking a little longer than you expected, you have a built in day to catch up and won't fall behind.</string>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -97,7 +97,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="45" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8g-PJ-hgD">
                                         <rect key="frame" x="30" y="426" width="354" height="716"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">justagirlandherblog.com, INTRODUCING...MONTHLY DECLUTTERING CHALLENGES!
+                                        <string key="text">justagirlandherblog.com, INTRODUCING...MONTHLY DECLUTTERING CHALLENGES!
 
 Sometimes the hardest part of decluttering can be knowing how to get started. It can feel like an overwhelming task, so recently I started trying to come up with a way to break it down into itty bitty pieces so that the decluttering process wouldn't feel so intimidating anymore.
 
@@ -111,7 +111,7 @@ JUNE DECLUTTERING CHALLENGE: DECLUTTERING CLOTHES
 
 Decluttering clothes felt like a good place to start because I would bet that almost all of us have too many of them! I am not a huge clothes person, and I still managed to declutter my clothes twice in a one month span at one pint, donating bags full of items each time!
 
-You'll notice a few things when you download your clothes decluttering calendar:</mutableString>
+You'll notice a few things when you download your clothes decluttering calendar:</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -155,7 +155,7 @@ You'll notice a few things when you download your clothes decluttering calendar:
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z4n-Qc-ojA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1258" y="-256"/>
+            <point key="canvasLocation" x="-1259.4202898550725" y="-256.47321428571428"/>
         </scene>
         <!--News Detail View Controller-->
         <scene sceneID="F0I-AE-Dwg">
@@ -246,7 +246,7 @@ You'll notice a few things when you download your clothes decluttering calendar:
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="45" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tao-Z8-un3">
                                         <rect key="frame" x="30" y="426" width="354" height="716"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">justagirlandherblog.com, INTRODUCING...MONTHLY DECLUTTERING CHALLENGES!
+                                        <string key="text">justagirlandherblog.com, INTRODUCING...MONTHLY DECLUTTERING CHALLENGES!
 
 Sometimes the hardest part of decluttering can be knowing how to get started. It can feel like an overwhelming task, so recently I started trying to come up with a way to break it down into itty bitty pieces so that the decluttering process wouldn't feel so intimidating anymore.
 
@@ -260,7 +260,7 @@ JUNE DECLUTTERING CHALLENGE: DECLUTTERING CLOTHES
 
 Decluttering clothes felt like a good place to start because I would bet that almost all of us have too many of them! I am not a huge clothes person, and I still managed to declutter my clothes twice in a one month span at one pint, donating bags full of items each time!
 
-You'll notice a few things when you download your clothes decluttering calendar:</mutableString>
+You'll notice a few things when you download your clothes decluttering calendar:</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
