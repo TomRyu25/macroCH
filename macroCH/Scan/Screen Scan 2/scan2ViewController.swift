@@ -13,9 +13,27 @@ import ImageIO
 class scan2ViewController: UIViewController {
     
     
+    @IBOutlet weak var buttonDisimpan: UIButton!
+    @IBOutlet weak var buttonDibuang: UIButton!
+    @IBOutlet weak var buttonDijual: UIButton!
+    @IBOutlet weak var buttonDonasi: UIButton!
+    
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var view1: UILabel!
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var view2: UIView!
+    
+    @IBOutlet weak var yesButton: UIButton!
+    @IBOutlet weak var noButton: UIButton!
+    
+    
+    @IBOutlet weak var confirmImage: UIImageView!
     @IBOutlet weak var previewImage: UIImageView!
     @IBOutlet weak var labelSuggestion: UILabel!
-    var selectedImage: UIImage! = #imageLiteral(resourceName: "Group 3")
+    var selectedImage: UIImage! = #imageLiteral(resourceName: "testmodel.jpg")
+    
+    var option = ""
     
     
     lazy var detectionRequest: VNCoreMLRequest = {
@@ -68,9 +86,9 @@ class scan2ViewController: UIViewController {
         let count = detections.count
         
         if count == 0 {
-            labelSuggestion.text = "this is testing label"
+            labelSuggestion.text = "This clothe is still at a good shape. we recommend you to keep it"
         }else{
-            labelSuggestion.text = "This shirt has (kondisi) and its time to (suggestion). are you sure you want to (pilihan)"
+            labelSuggestion.text = "This shirt has holes in it and its time to dispose it. do you want to dispose this clothe?"
         }
         
          guard let image = self.selectedImage else {
@@ -105,7 +123,13 @@ class scan2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        view2.isHidden = true
+        view1.alpha = 1
+        titleLabel.alpha = 1
+        buttonDijual.alpha = 1
+        buttonDonasi.alpha = 1
+        buttonDisimpan.alpha = 1
+        buttonDibuang.alpha = 1
         
         updateDectection(for: selectedImage)
         
@@ -116,6 +140,51 @@ class scan2ViewController: UIViewController {
         //}
         
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func option(_ sender: UIButton){
+        if sender == buttonDibuang {option = "dispose"}
+        if sender == buttonDonasi {option = "donate"}
+        if sender == buttonDijual {option = "sell"}
+        if sender == buttonDisimpan {option = "keep"}
+        
+        view2.isHidden = false
+        view1.alpha = 0.1
+        titleLabel.alpha = 0.1
+        buttonDijual.alpha = 0.1
+        buttonDonasi.alpha = 0.1
+        buttonDisimpan.alpha = 0.1
+        buttonDibuang.alpha = 0.1
+        
+        messageLabel.text = "Are you sure you want to \(option) this clothe dispite its condition?"
+        
+    }
+    
+    @IBAction func action (_ sender: UIButton){
+        if sender == noButton {
+            view2.isHidden = true
+            view1.alpha = 1
+            titleLabel.alpha = 1
+            buttonDijual.alpha = 1
+            buttonDonasi.alpha = 1
+            buttonDisimpan.alpha = 1
+            buttonDibuang.alpha = 1
+        }
+        
+        if sender == yesButton{
+            switch option {
+            case "dispose":
+                performSegue(withIdentifier: "toDispose", sender: nil)
+            case "donate":
+                performSegue(withIdentifier: "toDonate", sender: nil)
+            case "sell":
+                performSegue(withIdentifier: "toSell", sender: nil)
+            case "keep":
+                performSegue(withIdentifier: "toKeep", sender: nil)
+            default:
+                print("fail to get option")
+            }
+        }
     }
     
 }

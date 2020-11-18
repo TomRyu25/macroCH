@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -35,36 +36,36 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7f-87-1xl">
-                                <rect key="frame" x="122" y="189" width="170" height="36"/>
+                                <rect key="frame" x="123" y="189" width="169" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Dijual"/>
+                                <state key="normal" image="Dijual-1"/>
                                 <connections>
-                                    <segue destination="tCF-Km-brE" kind="show" id="KjJ-aT-5bQ"/>
+                                    <action selector="option:" destination="0oN-AB-fM6" eventType="touchUpInside" id="tEv-oH-Yp8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgn-Vi-ZPh">
                                 <rect key="frame" x="377" y="318" width="37" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Didonasi"/>
+                                <state key="normal" image="Didonasi-1"/>
                                 <connections>
-                                    <segue destination="bN3-bu-DN7" kind="show" id="YhA-UQ-ZM7"/>
+                                    <action selector="option:" destination="0oN-AB-fM6" eventType="touchUpInside" id="hnx-Rs-QxT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVY-FO-ZiR">
                                 <rect key="frame" x="2" y="318" width="35" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" backgroundImage="Disimpan-1"/>
+                                <state key="normal" backgroundImage="Disimpan"/>
                                 <connections>
-                                    <segue destination="ahK-YL-TC1" kind="show" id="f4v-nW-dTs"/>
+                                    <action selector="option:" destination="0oN-AB-fM6" eventType="touchUpInside" id="kVp-C7-tSi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xF0-Ja-VNg">
                                 <rect key="frame" x="122" y="581" width="170" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Dibuang"/>
+                                <state key="normal" image="Dibuang-1"/>
                                 <connections>
-                                    <segue destination="E6N-0x-hRc" kind="show" id="Gjh-Am-xtr"/>
+                                    <action selector="option:" destination="0oN-AB-fM6" eventType="touchUpInside" id="bdf-5C-eBw"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IN4-wo-88l">
@@ -86,13 +87,78 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kDB-oL-t6c">
+                                <rect key="frame" x="68" y="257" width="272" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's Confirm !!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPc-ia-cjb">
+                                        <rect key="frame" x="78" y="32" width="122" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="testmodel" translatesAutoresizingMaskIntoConstraints="NO" id="spr-CQ-g1F">
+                                        <rect key="frame" x="83" y="61" width="112" height="116"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cz-4r-dhz">
+                                        <rect key="frame" x="50" y="300" width="66" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Yes" backgroundImage="yesButton-1"/>
+                                        <connections>
+                                            <action selector="action:" destination="0oN-AB-fM6" eventType="touchUpInside" id="gV7-hH-aDR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyJ-nK-GPN">
+                                        <rect key="frame" x="160" y="300" width="68" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <state key="normal" title="No" backgroundImage="noButton-1">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="action:" destination="0oN-AB-fM6" eventType="touchUpInside" id="cmc-uo-qV0"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyh-TG-6II">
+                                        <rect key="frame" x="27" y="185" width="225" height="105"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81213003399999995" green="0.91050779820000005" blue="0.86274129150000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="I6m-R2-SgH"/>
                         <color key="backgroundColor" red="0.92156862745098034" green="0.9766337276" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
+                        <outlet property="buttonDibuang" destination="xF0-Ja-VNg" id="sZQ-j2-qWf"/>
+                        <outlet property="buttonDijual" destination="jgn-Vi-ZPh" id="8JP-FW-rvD"/>
+                        <outlet property="buttonDisimpan" destination="zVY-FO-ZiR" id="FIz-2i-ARK"/>
+                        <outlet property="buttonDonasi" destination="h7f-87-1xl" id="KJJ-D2-dyr"/>
+                        <outlet property="confirmImage" destination="spr-CQ-g1F" id="bfj-aA-CX3"/>
                         <outlet property="labelSuggestion" destination="dlH-la-B8t" id="7nu-Lc-y7m"/>
+                        <outlet property="messageLabel" destination="yyh-TG-6II" id="VOY-Qr-J9v"/>
+                        <outlet property="noButton" destination="pyJ-nK-GPN" id="5bv-2B-vDj"/>
                         <outlet property="previewImage" destination="ieT-5Q-kUV" id="d8q-zk-8av"/>
+                        <outlet property="titleLabel" destination="egw-A8-KU6" id="Lm2-P6-XVy"/>
+                        <outlet property="view1" destination="dlH-la-B8t" id="1Yv-45-fBE"/>
+                        <outlet property="view2" destination="kDB-oL-t6c" id="85T-cy-bwP"/>
+                        <outlet property="yesButton" destination="7cz-4r-dhz" id="hTD-Om-Qdz"/>
+                        <segue destination="tCF-Km-brE" kind="show" identifier="toDonate" id="Tmp-2u-Cky"/>
+                        <segue destination="ahK-YL-TC1" kind="show" identifier="toKeep" id="SC9-0Z-Heg"/>
+                        <segue destination="bN3-bu-DN7" kind="show" identifier="toSell" id="IWj-gB-RCP"/>
+                        <segue destination="E6N-0x-hRc" kind="show" identifier="toDispose" id="D7e-qf-aNk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUk-20-B3A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -142,10 +208,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Dibuang" width="170" height="36"/>
-        <image name="Didonasi" width="37" height="170"/>
-        <image name="Dijual" width="170" height="36"/>
-        <image name="Disimpan-1" width="35" height="170"/>
+        <image name="Dibuang-1" width="170" height="36"/>
+        <image name="Didonasi-1" width="37" height="170"/>
+        <image name="Dijual-1" width="169" height="36"/>
+        <image name="Disimpan" width="35" height="170"/>
+        <image name="noButton-1" width="70" height="42"/>
+        <image name="testmodel" width="385" height="413"/>
+        <image name="yesButton-1" width="70" height="42"/>
         <image name="􀆉" width="11" height="19"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
