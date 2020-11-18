@@ -31,7 +31,8 @@ class scan2ViewController: UIViewController {
     @IBOutlet weak var confirmImage: UIImageView!
     @IBOutlet weak var previewImage: UIImageView!
     @IBOutlet weak var labelSuggestion: UILabel!
-    var selectedImage: UIImage! = #imageLiteral(resourceName: "testmodel.jpg")
+    @IBOutlet weak var messageImage: UIImageView!
+    var selectedImage: UIImage!
     
     var option = ""
     
@@ -122,6 +123,8 @@ class scan2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        messageImage.image = selectedImage
         
         view2.isHidden = true
         view1.alpha = 1

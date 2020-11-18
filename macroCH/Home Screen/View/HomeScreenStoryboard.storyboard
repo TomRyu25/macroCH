@@ -383,10 +383,10 @@
             </objects>
             <point key="canvasLocation" x="1231.8840579710145" y="91.741071428571431"/>
         </scene>
-        <!--scan2-->
+        <!--scan1-->
         <scene sceneID="Qnu-4I-lek">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="scan1" storyboardName="scan2Storyboard" referencedIdentifier="scan2" id="Y4b-8t-pCh" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="scan1" storyboardName="scan1Storyboard" referencedIdentifier="scan1" id="Y4b-8t-pCh" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="TM2-eV-5Sx"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHv-R6-VSL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

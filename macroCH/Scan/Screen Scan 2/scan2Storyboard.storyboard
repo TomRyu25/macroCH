@@ -148,6 +148,7 @@
                         <outlet property="buttonDonasi" destination="h7f-87-1xl" id="KJJ-D2-dyr"/>
                         <outlet property="confirmImage" destination="spr-CQ-g1F" id="bfj-aA-CX3"/>
                         <outlet property="labelSuggestion" destination="dlH-la-B8t" id="7nu-Lc-y7m"/>
+                        <outlet property="messageImage" destination="spr-CQ-g1F" id="qkI-dr-U31"/>
                         <outlet property="messageLabel" destination="yyh-TG-6II" id="VOY-Qr-J9v"/>
                         <outlet property="noButton" destination="pyJ-nK-GPN" id="5bv-2B-vDj"/>
                         <outlet property="previewImage" destination="ieT-5Q-kUV" id="d8q-zk-8av"/>
