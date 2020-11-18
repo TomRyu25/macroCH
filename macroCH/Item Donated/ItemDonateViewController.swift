@@ -20,18 +20,6 @@ class ItemDonateViewController: UIViewController {
     
 //    fetch item
     var items: [Baju] = [
-        .init(),
-        .init(),
-        .init(),
-        .init(),
-        .init(),
-        .init(),
-        .init(),
-        .init(),
-        .init(),
-        .init(),
-        .init(),
-        .init(),
         .init()
     ]
     
@@ -48,24 +36,7 @@ class ItemDonateViewController: UIViewController {
         
         //sample data
         items[0].action = 2
-        items[1].action = 2
-        items[2].action = 2
-        items[3].action = 2
-        items[4].action = 2
-        items[5].action = 2
-        items[6].action = 2
-        items[7].action = 2
-        items[8].action = 2
-        items[9].action = 2
-        items[10].action = 2
-        items[11].action = 2
-        items[12].action = 2
-        items[3].dateSaved = Date.yesterday
-        items[7].dateSaved = Date.yesterday
-        items[7].name = "bajunamehistory"
-        items[7].processed = 2
-        items[5].dateSaved = Date.yesterday
-        items[9].dateSaved = Date.yesterday
+        items[0].name = "Pink Shirt"
         
         
         itemsNow = processedItem(arr: items, section: "now")

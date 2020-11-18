@@ -104,6 +104,8 @@ class ItemDisposeViewController: UIViewController {
 
     }
     
+    @IBAction func unwindToDispose(_ sender:UIStoryboardSegue?){}
+    
     
     @IBAction func nowBtn(_ sender: Any) {
         //nowbtn format

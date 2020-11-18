@@ -91,6 +91,8 @@ class ItemSoldViewController: UIViewController {
 
     }
     
+    @IBAction func unwindToSold(_ sender:UIStoryboardSegue?){}
+    
     
     @IBAction func nowBtn(_ sender: Any) {
         //nowbtn format

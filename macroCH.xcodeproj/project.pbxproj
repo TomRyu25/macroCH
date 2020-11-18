@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B082B262561C9DB009A4E16 /* DisposedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B082B192561C9DB009A4E16 /* DisposedViewController.swift */; };
-		9B082B272561C9DB009A4E16 /* DisposedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B082B1A2561C9DB009A4E16 /* DisposedDetailViewController.swift */; };
-		9B082B282561C9DB009A4E16 /* DisposedCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B082B1C2561C9DB009A4E16 /* DisposedCollectionReusableView.swift */; };
-		9B082B2B2561C9DB009A4E16 /* DisposedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B082B1F2561C9DB009A4E16 /* DisposedView.swift */; };
-		9B082B2C2561C9DB009A4E16 /* DisposedDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B082B202561C9DB009A4E16 /* DisposedDetailView.xib */; };
-		9B082B2D2561C9DB009A4E16 /* Disposed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B082B212561C9DB009A4E16 /* Disposed.storyboard */; };
 		9B082B2E2561C9DB009A4E16 /* ItemDispose.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B082B232561C9DB009A4E16 /* ItemDispose.storyboard */; };
 		9B082B2F2561C9DB009A4E16 /* ItemDisposeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B082B242561C9DB009A4E16 /* ItemDisposeDetailViewController.swift */; };
 		9B082B302561C9DB009A4E16 /* ItemDisposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B082B252561C9DB009A4E16 /* ItemDisposeViewController.swift */; };
@@ -43,13 +37,13 @@
 		9BA492A22561C7E100F0B2B9 /* ItemKeptDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4929C2561C7E100F0B2B9 /* ItemKeptDetailViewController.swift */; };
 		9BA492A32561C7E100F0B2B9 /* ItemKeptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4929D2561C7E100F0B2B9 /* ItemKeptViewController.swift */; };
 		9BA492A42561C7E100F0B2B9 /* ItemKeptCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4929E2561C7E100F0B2B9 /* ItemKeptCollectionReusableView.swift */; };
-		9BA8F4052562709B00F3B89D /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA8F4032562709B00F3B89D /* ItemCollectionViewCell.swift */; };
-		9BA8F4062562709B00F3B89D /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BA8F4042562709B00F3B89D /* ItemCollectionViewCell.xib */; };
 		9BBA71C52561C73D00955D72 /* HomeScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBA71C02561C73D00955D72 /* HomeScreenCollectionViewCell.swift */; };
 		9BBA71C62561C73D00955D72 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBA71C12561C73D00955D72 /* HomeScreenViewController.swift */; };
 		9BBA71C72561C73D00955D72 /* HomeScreenCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BBA71C32561C73D00955D72 /* HomeScreenCollectionViewCell.xib */; };
 		9BBA71C82561C73D00955D72 /* HomeScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBA71C42561C73D00955D72 /* HomeScreenStoryboard.storyboard */; };
 		9BE2921F2561A13F00374784 /* lubangBajuDetector 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9BE2921E2561A13F00374784 /* lubangBajuDetector 1.mlmodel */; };
+		9BFC76CA256589A100EC2A28 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BFC76C8256589A100EC2A28 /* ItemCollectionViewCell.xib */; };
+		9BFC76CB256589A100EC2A28 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFC76C9256589A100EC2A28 /* ItemCollectionViewCell.swift */; };
 		9BFD3A472558245900A0A108 /* scan1Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFD3A462558245900A0A108 /* scan1Storyboard.storyboard */; };
 		9BFD3A532558299200A0A108 /* scan1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD3A522558299200A0A108 /* scan1ViewController.swift */; };
 		9BFD3A5925582CDF00A0A108 /* scan2Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFD3A5825582CDF00A0A108 /* scan2Storyboard.storyboard */; };
@@ -74,12 +68,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9B082B192561C9DB009A4E16 /* DisposedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisposedViewController.swift; sourceTree = "<group>"; };
-		9B082B1A2561C9DB009A4E16 /* DisposedDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisposedDetailViewController.swift; sourceTree = "<group>"; };
-		9B082B1C2561C9DB009A4E16 /* DisposedCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisposedCollectionReusableView.swift; sourceTree = "<group>"; };
-		9B082B1F2561C9DB009A4E16 /* DisposedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisposedView.swift; sourceTree = "<group>"; };
-		9B082B202561C9DB009A4E16 /* DisposedDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisposedDetailView.xib; sourceTree = "<group>"; };
-		9B082B212561C9DB009A4E16 /* Disposed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Disposed.storyboard; sourceTree = "<group>"; };
 		9B082B232561C9DB009A4E16 /* ItemDispose.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ItemDispose.storyboard; sourceTree = "<group>"; };
 		9B082B242561C9DB009A4E16 /* ItemDisposeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDisposeDetailViewController.swift; sourceTree = "<group>"; };
 		9B082B252561C9DB009A4E16 /* ItemDisposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDisposeViewController.swift; sourceTree = "<group>"; };
@@ -116,13 +104,13 @@
 		9BA4929C2561C7E100F0B2B9 /* ItemKeptDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemKeptDetailViewController.swift; sourceTree = "<group>"; };
 		9BA4929D2561C7E100F0B2B9 /* ItemKeptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemKeptViewController.swift; sourceTree = "<group>"; };
 		9BA4929E2561C7E100F0B2B9 /* ItemKeptCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemKeptCollectionReusableView.swift; sourceTree = "<group>"; };
-		9BA8F4032562709B00F3B89D /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
-		9BA8F4042562709B00F3B89D /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		9BBA71C02561C73D00955D72 /* HomeScreenCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenCollectionViewCell.swift; sourceTree = "<group>"; };
 		9BBA71C12561C73D00955D72 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		9BBA71C32561C73D00955D72 /* HomeScreenCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeScreenCollectionViewCell.xib; sourceTree = "<group>"; };
 		9BBA71C42561C73D00955D72 /* HomeScreenStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeScreenStoryboard.storyboard; sourceTree = "<group>"; };
 		9BE2921E2561A13F00374784 /* lubangBajuDetector 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "lubangBajuDetector 1.mlmodel"; path = "../lubangBajuDetector 1.mlmodel"; sourceTree = "<group>"; };
+		9BFC76C8256589A100EC2A28 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		9BFC76C9256589A100EC2A28 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		9BFD3A462558245900A0A108 /* scan1Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = scan1Storyboard.storyboard; sourceTree = "<group>"; };
 		9BFD3A522558299200A0A108 /* scan1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scan1ViewController.swift; sourceTree = "<group>"; };
 		9BFD3A5825582CDF00A0A108 /* scan2Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = scan2Storyboard.storyboard; sourceTree = "<group>"; };
@@ -154,43 +142,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9B082B172561C9DB009A4E16 /* Disposed */ = {
-			isa = PBXGroup;
-			children = (
-				9B082B182561C9DB009A4E16 /* Controller */,
-				9B082B1B2561C9DB009A4E16 /* View */,
-			);
-			path = Disposed;
-			sourceTree = "<group>";
-		};
-		9B082B182561C9DB009A4E16 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				9B082B192561C9DB009A4E16 /* DisposedViewController.swift */,
-				9B082B1A2561C9DB009A4E16 /* DisposedDetailViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		9B082B1B2561C9DB009A4E16 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				9B082B1C2561C9DB009A4E16 /* DisposedCollectionReusableView.swift */,
-				9BA8F4032562709B00F3B89D /* ItemCollectionViewCell.swift */,
-				9BA8F4042562709B00F3B89D /* ItemCollectionViewCell.xib */,
-				9B082B1F2561C9DB009A4E16 /* DisposedView.swift */,
-				9B082B202561C9DB009A4E16 /* DisposedDetailView.xib */,
-				9B082B212561C9DB009A4E16 /* Disposed.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		9B082B222561C9DB009A4E16 /* Item Disposed */ = {
 			isa = PBXGroup;
 			children = (
 				9B082B232561C9DB009A4E16 /* ItemDispose.storyboard */,
 				9B082B242561C9DB009A4E16 /* ItemDisposeDetailViewController.swift */,
 				9B082B252561C9DB009A4E16 /* ItemDisposeViewController.swift */,
+				9BFC76C9256589A100EC2A28 /* ItemCollectionViewCell.swift */,
+				9BFC76C8256589A100EC2A28 /* ItemCollectionViewCell.xib */,
 			);
 			path = "Item Disposed";
 			sourceTree = "<group>";
@@ -327,7 +286,6 @@
 				9BA492982561C7E100F0B2B9 /* ItemKept */,
 				9B895FEC2561C8BF00941DF7 /* Item Sold */,
 				9B082B222561C9DB009A4E16 /* Item Disposed */,
-				9B082B172561C9DB009A4E16 /* Disposed */,
 				9B0B23C82561CA4C008EF318 /* Item Donated */,
 				9B25A06D2553222A0079616A /* MVC */,
 				9B8EF99F252C631C00791F6E /* AppDelegate.swift */,
@@ -526,9 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BA492A12561C7E100F0B2B9 /* ItemKeptStoryboard.storyboard in Resources */,
-				9B082B2D2561C9DB009A4E16 /* Disposed.storyboard in Resources */,
 				9B0B23CC2561CA4C008EF318 /* ItemDonate.storyboard in Resources */,
-				9B082B2C2561C9DB009A4E16 /* DisposedDetailView.xib in Resources */,
 				9B6B035E2561C6B6006ABDF6 /* ScanOnboardingView.xib in Resources */,
 				9BFD3A5925582CDF00A0A108 /* scan2Storyboard.storyboard in Resources */,
 				9BBA71C72561C73D00955D72 /* HomeScreenCollectionViewCell.xib in Resources */,
@@ -541,10 +497,10 @@
 				9B082B2E2561C9DB009A4E16 /* ItemDispose.storyboard in Resources */,
 				9BFD3A472558245900A0A108 /* scan1Storyboard.storyboard in Resources */,
 				9B6B035C2561C6B6006ABDF6 /* CameraOnboardingView.xib in Resources */,
+				9BFC76CA256589A100EC2A28 /* ItemCollectionViewCell.xib in Resources */,
 				9BBA71C82561C73D00955D72 /* HomeScreenStoryboard.storyboard in Resources */,
 				9B6B035B2561C6B6006ABDF6 /* OnboardingHomeView.xib in Resources */,
 				9B982FE22561D11F009771B5 /* onboardingStoryboard.storyboard in Resources */,
-				9BA8F4062562709B00F3B89D /* ItemCollectionViewCell.xib in Resources */,
 				9B8EF9A7252C631C00791F6E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,25 +531,21 @@
 				9BA492A32561C7E100F0B2B9 /* ItemKeptViewController.swift in Sources */,
 				9BFD3A5E25582CF400A0A108 /* scan2ViewController.swift in Sources */,
 				9B895FF22561C8BF00941DF7 /* ItemSoldViewController.swift in Sources */,
+				9BFC76CB256589A100EC2A28 /* ItemCollectionViewCell.swift in Sources */,
 				9B1429282542D92100B25012 /* model.swift in Sources */,
 				9B0B23CE2561CA4C008EF318 /* ItemDonateDetailViewController.swift in Sources */,
 				9B8EF9A4252C631C00791F6E /* ViewController.swift in Sources */,
 				9B082B2F2561C9DB009A4E16 /* ItemDisposeDetailViewController.swift in Sources */,
 				9BBA71C62561C73D00955D72 /* HomeScreenViewController.swift in Sources */,
 				9BFD3A532558299200A0A108 /* scan1ViewController.swift in Sources */,
-				9B082B262561C9DB009A4E16 /* DisposedViewController.swift in Sources */,
-				9B082B2B2561C9DB009A4E16 /* DisposedView.swift in Sources */,
 				9B8EF9A0252C631C00791F6E /* AppDelegate.swift in Sources */,
 				9BA492A22561C7E100F0B2B9 /* ItemKeptDetailViewController.swift in Sources */,
 				9B082B302561C9DB009A4E16 /* ItemDisposeViewController.swift in Sources */,
-				9B082B282561C9DB009A4E16 /* DisposedCollectionReusableView.swift in Sources */,
 				9B6B03682561C6C2006ABDF6 /* OnboardingViewController.swift in Sources */,
 				9BA492A42561C7E100F0B2B9 /* ItemKeptCollectionReusableView.swift in Sources */,
-				9B082B272561C9DB009A4E16 /* DisposedDetailViewController.swift in Sources */,
 				9B8EF9A2252C631C00791F6E /* SceneDelegate.swift in Sources */,
 				9BBA71C52561C73D00955D72 /* HomeScreenCollectionViewCell.swift in Sources */,
 				9B895FF12561C8BF00941DF7 /* ItemSoldDetailViewController.swift in Sources */,
-				9BA8F4052562709B00F3B89D /* ItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
