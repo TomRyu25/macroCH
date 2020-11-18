@@ -44,6 +44,8 @@
 		9BE2921F2561A13F00374784 /* lubangBajuDetector 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9BE2921E2561A13F00374784 /* lubangBajuDetector 1.mlmodel */; };
 		9BFC76CA256589A100EC2A28 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BFC76C8256589A100EC2A28 /* ItemCollectionViewCell.xib */; };
 		9BFC76CB256589A100EC2A28 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFC76C9256589A100EC2A28 /* ItemCollectionViewCell.swift */; };
+		9BFC76D2256590E100EC2A28 /* NewsPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFC76D0256590E100EC2A28 /* NewsPage.storyboard */; };
+		9BFC76D3256590E100EC2A28 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFC76D1256590E100EC2A28 /* NewsDetailViewController.swift */; };
 		9BFD3A472558245900A0A108 /* scan1Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFD3A462558245900A0A108 /* scan1Storyboard.storyboard */; };
 		9BFD3A532558299200A0A108 /* scan1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFD3A522558299200A0A108 /* scan1ViewController.swift */; };
 		9BFD3A5925582CDF00A0A108 /* scan2Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BFD3A5825582CDF00A0A108 /* scan2Storyboard.storyboard */; };
@@ -111,6 +113,8 @@
 		9BE2921E2561A13F00374784 /* lubangBajuDetector 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "lubangBajuDetector 1.mlmodel"; path = "../lubangBajuDetector 1.mlmodel"; sourceTree = "<group>"; };
 		9BFC76C8256589A100EC2A28 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		9BFC76C9256589A100EC2A28 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		9BFC76D0256590E100EC2A28 /* NewsPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewsPage.storyboard; sourceTree = "<group>"; };
+		9BFC76D1256590E100EC2A28 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 		9BFD3A462558245900A0A108 /* scan1Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = scan1Storyboard.storyboard; sourceTree = "<group>"; };
 		9BFD3A522558299200A0A108 /* scan1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scan1ViewController.swift; sourceTree = "<group>"; };
 		9BFD3A5825582CDF00A0A108 /* scan2Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = scan2Storyboard.storyboard; sourceTree = "<group>"; };
@@ -282,6 +286,7 @@
 				9B6B03622561C6C2006ABDF6 /* Onboarding */,
 				9B6B03512561C6B6006ABDF6 /* Tutorial */,
 				9BBA71BE2561C73D00955D72 /* Home Screen */,
+				9BFC76CF256590E100EC2A28 /* News Page */,
 				9BFD3A3D2558243500A0A108 /* Scan */,
 				9BA492982561C7E100F0B2B9 /* ItemKept */,
 				9B895FEC2561C8BF00941DF7 /* Item Sold */,
@@ -351,6 +356,15 @@
 				9BBA71C42561C73D00955D72 /* HomeScreenStoryboard.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9BFC76CF256590E100EC2A28 /* News Page */ = {
+			isa = PBXGroup;
+			children = (
+				9BFC76D0256590E100EC2A28 /* NewsPage.storyboard */,
+				9BFC76D1256590E100EC2A28 /* NewsDetailViewController.swift */,
+			);
+			path = "News Page";
 			sourceTree = "<group>";
 		};
 		9BFD3A3D2558243500A0A108 /* Scan */ = {
@@ -487,6 +501,7 @@
 				9B0B23CC2561CA4C008EF318 /* ItemDonate.storyboard in Resources */,
 				9B6B035E2561C6B6006ABDF6 /* ScanOnboardingView.xib in Resources */,
 				9BFD3A5925582CDF00A0A108 /* scan2Storyboard.storyboard in Resources */,
+				9BFC76D2256590E100EC2A28 /* NewsPage.storyboard in Resources */,
 				9BBA71C72561C73D00955D72 /* HomeScreenCollectionViewCell.xib in Resources */,
 				9B6B035A2561C6B6006ABDF6 /* ActionOnboardingView.xib in Resources */,
 				9B8EF9AC252C631D00791F6E /* LaunchScreen.storyboard in Resources */,
@@ -529,6 +544,7 @@
 				9BE2921F2561A13F00374784 /* lubangBajuDetector 1.mlmodel in Sources */,
 				9B0B23CD2561CA4C008EF318 /* ItemDonateViewController.swift in Sources */,
 				9BA492A32561C7E100F0B2B9 /* ItemKeptViewController.swift in Sources */,
+				9BFC76D3256590E100EC2A28 /* NewsDetailViewController.swift in Sources */,
 				9BFD3A5E25582CF400A0A108 /* scan2ViewController.swift in Sources */,
 				9B895FF22561C8BF00941DF7 /* ItemSoldViewController.swift in Sources */,
 				9BFC76CB256589A100EC2A28 /* ItemCollectionViewCell.swift in Sources */,

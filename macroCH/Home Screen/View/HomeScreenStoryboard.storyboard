@@ -353,6 +353,14 @@
             </objects>
             <point key="canvasLocation" x="1250.7246376811595" y="133.92857142857142"/>
         </scene>
+        <!--news-->
+        <scene sceneID="BWg-2K-obf">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="news" storyboardName="NewsPage" referencedIdentifier="news" id="qaI-ZA-pTl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4cg-dN-KS6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1082" y="301"/>
+        </scene>
         <!--itemDispose-->
         <scene sceneID="lSM-Kw-y6K">
             <objects>
