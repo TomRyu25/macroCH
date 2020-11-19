@@ -38,18 +38,18 @@ class scan2ViewController: UIViewController {
     
     
     lazy var detectionRequest: VNCoreMLRequest = {
-             do {
-                let model = try VNCoreMLModel(for: lubangBajuDetector_1().model)
+         do {
+            let model = try VNCoreMLModel(for: lubangBajuDetector_1().model)
 
-                 let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
-                     self?.processDetections(for: request, error: error)
-                 })
-                 request.imageCropAndScaleOption = .scaleFit
-                 return request
-             } catch {
-                 fatalError("Failed to load Vision ML model: \(error)")
-             }
-         }()
+             let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
+                 self?.processDetections(for: request, error: error)
+             })
+             request.imageCropAndScaleOption = .scaleFit
+             return request
+         } catch {
+             fatalError("Failed to load Vision ML model: \(error)")
+     }
+     }()
     
     
     private func updateDectection(for image: UIImage){
@@ -136,7 +136,6 @@ class scan2ViewController: UIViewController {
         
         updateDectection(for: selectedImage)
         
-        
         //tentuin warna
         //if (selectedImage.image?.averageColor){
             
@@ -189,7 +188,6 @@ class scan2ViewController: UIViewController {
             }
         }
     }
-    
 }
 
 extension UIImage {
@@ -207,3 +205,4 @@ extension UIImage {
         return UIColor(red: CGFloat(bitmap[0]) / 255, green: CGFloat(bitmap[1]) / 255, blue: CGFloat(bitmap[2]) / 255, alpha: CGFloat(bitmap[3]) / 255)
     }
 }
+
